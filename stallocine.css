@@ -36,41 +36,41 @@ header ul{
 /*les differents main*/
 
 #cinema{
-    background-color: red;
+    background-color: turquoise;
     display:flex;
     flex-direction: column;
 }
 #cinema h2{
     margin: auto;
 }
-#cinema nav{
-    background-color: paleturquoise;
-}
 #cinema nav ul{ /*liste menu center*/
     display:flex;
-    flex-direction:row;
     justify-content: space-between;
     margin: auto;
 }
-#cinema section{
-    background-color: pink;
-    flex-basis: auto;
-}
-#cinema section ul{
+#cinema section ul{ /* liste les images */
     display:flex;
 }
-#cinema article{
-    background-color: chartreuse;
+#prochainement{ /*liste de facon verticale*/
+    display:flex;
+    flex-direction: column;
 }
-#prochainement{
-     align-self:flex-end;
+#cinedeux{
+    display:flex;
+    flex-direction: column;
 }
-#prochainement ul{ /*la liste situe a droite*/
-    flex-direction:column;
+#cinetrois{
+    display:flex;
 }
-figure{/*rapprocher les photos (resserer)*/
-    margin-left: -30px;
+#imgnewcine{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
 }
+#imgnewcine img{
+    width: 100%;
+}
+
 /**********************************/
 
 #serie{
