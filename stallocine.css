@@ -37,16 +37,19 @@ header ul{
 #cinema{
     background-color: red;
     display:flex;
-    flex-flow: row wrap;
+    flex-direction: column;
 }
 #cinema h2{
+    margin: auto;
 }
 #cinema nav{
     background-color: paleturquoise;
 }
-#cinema nav ul{
+#cinema nav ul{ /*liste menu center*/
     display:flex;
     flex-direction:row;
+    justify-content: space-between;
+    margin: auto;
 }
 #cinema section{
     background-color: pink;
@@ -58,11 +61,7 @@ header ul{
 #cinema article{
     background-color: chartreuse;
 }
-#prochain ul{
-    display:flex;
-    flex-direction: column;
-    height: 80%;
-
+#prochain{
 }
 /**********************************/
 
