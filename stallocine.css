@@ -53,15 +53,23 @@ header ul{
 }
 #cinema section{
     background-color: pink;
+    flex-basis: auto;
 }
 #cinema section ul{
     display:flex;
-    flex-direction:row;
 }
 #cinema article{
     background-color: chartreuse;
 }
-#prochain{
+#prochainement{
+     align-self:flex-end;
+     flex-direction:column-reverse;
+}
+#prochainement ul{ /*la liste situe a droite*/
+    flex-direction:column;
+}
+figure{/*rapprocher les photos (resserer)*/
+    margin-left: -30px;
 }
 /**********************************/
 
