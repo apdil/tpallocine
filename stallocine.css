@@ -36,13 +36,7 @@ body{
 
 /*header*/
 
-header div{ /*aligner les 2 div parent*/
-    background-color: #FECC00;
-    display:flex;
-}
-header ul{
-    display:flex;
-}
+
 #barre{ /*centrer la barre de recherche*/
     margin:auto;
 }
