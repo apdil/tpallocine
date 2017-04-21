@@ -1,0 +1,106 @@
+
+img{
+    height:100px;
+    width:100px;
+}
+
+li{ /*enlever le point ul*/
+    list-style-type:none;
+}
+
+body{
+    background-color: #F2F2F2;
+    margin-right:10%;
+    margin-left:10%;
+}
+
+/*header*/
+
+header{
+    background-color: #FECC00;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    }
+header div{
+    background-color: green;
+
+}
+header ul{
+    display:flex;
+    flex-direction:row;
+    width:100em;
+}
+
+/*les differents main*/
+
+#cinema{
+    background-color: red;
+    display:flex;
+    flex-flow: row wrap;
+}
+#cinema h2{
+}
+#cinema nav{
+    background-color: paleturquoise;
+}
+#cinema nav ul{
+    display:flex;
+    flex-direction:row;
+}
+#cinema section{
+    background-color: pink;
+}
+#cinema section ul{
+    display:flex;
+    flex-direction:row;
+}
+#cinema article{
+    background-color: chartreuse;
+}
+#prochain ul{
+    display:flex;
+    flex-direction: column;
+    height: 80%;
+
+}
+/**********************************/
+
+#serie{
+    background-color: violet;
+}
+#serie nav{
+    background-color: mediumorchid;
+}
+#serie section{
+    background-color: maroon;
+}
+
+/*********************************/
+
+#emission{
+    background-color: orange;
+}
+#emission nav{
+    background-color: mediumblue;
+}
+#emission section{
+    background-color: peru;
+}
+
+/*********************************/
+
+#divertir{
+    background-color: rosybrown;
+}
+
+#stars{
+    background-color: purple;
+}
+#stars nav{
+    background-color: darkolivegreen;
+}
+#stars section{
+    background-color: chocolate;
+}
+/*fin main*/
