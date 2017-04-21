@@ -20,16 +20,17 @@ header{
     background-color: #FECC00;
     display:flex;
     flex-direction:column;
-    flex:1;
     }
-header div{
-    background-color: green;
-
+header div{ /*aligner les 2 div parent*/
+    background-color: #FECC00;
+    display:flex;
 }
 header ul{
     display:flex;
     flex-direction:row;
-    width:100em;
+}
+#barre{ /*centrer la barre de recherche*/
+    margin:auto;
 }
 
 /*les differents main*/
@@ -63,7 +64,6 @@ header ul{
 }
 #prochainement{
      align-self:flex-end;
-     flex-direction:column-reverse;
 }
 #prochainement ul{ /*la liste situe a droite*/
     flex-direction:column;
