@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stallocine.css">
 </head>
 <body> 
-    <header> <!-- CREATION BANDEROLE -->
+    <header class="lsvertical"> <!-- CREATION BANDEROLE -->
         <div> <!-- block |logo + barre de recherche| -->
             <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/3/35/Allocin%C3%A9_Logo.svg/1280px-Allocin%C3%A9_Logo.svg.png" alt="">
             <div id="barre">Barre de recherche</div>
@@ -35,10 +35,10 @@
     <section> <!-- AFFICHE (articles) defillements --> 
         <div>defillement des articles</div>
     </section>
-    <main id="cinema"> <!-- DEBUT SECTION CINEMA --> 
-        <h2><a href="http://www.allocine.fr/film/">CINEMA</a></h2>
+    <main class="lsvertical"> <!-- DEBUT SECTION CINEMA --> 
+        <h2 class="titreh2"><a href="http://www.allocine.fr/film/">CINEMA</a></h2>
         <nav> <!-- menu Cinema --> 
-            <ul>
+            <ul class="lshorizontal">
                 <li><a href="http://www.allocine.fr/film/avantpremieres/">Avant-premières</a></li>
                 <li><a href="http://www.allocine.fr/film/agenda/">Agenda des sorties</a></li>
                 <li><a href="http://www.allocine.fr/film/enfants/aucinema/">Films pour enfant à l'affiche</a></li>
@@ -49,11 +49,11 @@
         <article> <!-- barre de recherche --> 
             <div>barre de recherche</div> <!--realisation barre de recherche -->
         </article>
-        <section id="cinetrois"> <!-- parent 2 + 1 block |(sortie de la semain + toujours a l'affiche) + prochainement|-->
-            <div id="cinedeux"> <!-- |sortie de la semaine + toujours a l'affiche|-->
+        <section class="lsimage"> <!-- parent 2 + 1 block |(sortie de la semain + toujours a l'affiche) + prochainement|-->
+            <div class="lsvertical"> <!-- |sortie de la semaine + toujours a l'affiche|-->
                 <div> <!-- Sortie de la semaine -->
                     <h3><a href="http://www.allocine.fr/film/sorties-semaine/">SORTIE DE LA SEMAINE</a></h3>
-                    <ul>
+                    <ul class="lsimage">
                         <li>
                             <a href="#">
                                 <figure> <!-- Creation d'image avec legende et lien -->
@@ -91,7 +91,7 @@
                 </div>
                 <div> <!-- Toujours à l'affiche --> 
                     <h3><a href="http://www.allocine.fr/film/sorties-semaine/">TOUJOURS A L'AFFICHE</a></h3>
-                    <ul>
+                    <ul class="lsimage">
                         <li>
                             <a href="#">
                                 <figure> <!-- Creation d'image avec legende avec le lien -->
@@ -134,7 +134,7 @@
                 <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=189525.html">
                     <img src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/03/02/10/13/106609.jpg" alt="">
                 Pirates des Caraïbes : La Vengeance de Salazar</a>
-                <ul id="prochainement"> 
+                <ul> 
                     <li><a href="#">Procès du siècle</a></li>
                     <li><a href="#">Momie</a></li>
                     <li><a href="#">Stars Wars - Les Derniers Jedi</a></li>
@@ -151,7 +151,7 @@
         <section> <!-- Bandes annonces a ne pas manquer --> 
             <h3><a href="#">BANDES ANNONCES A NE PAS MANQUER</a></h3>
             <a href="#"><img src="http://fr.web.img6.acsta.net/c_50_70/pictures/17/04/13/09/43/259464.jpg" alt=""></a>
-            <ul>
+            <ul class="lsimage">
                 <li><a href="#">
                     <img src="http://fr.web.img6.acsta.net/c_50_70/pictures/17/04/13/09/43/259464.jpg" alt="">
                 </a></li>
@@ -228,108 +228,114 @@
             <a href="#">Toutes les news cinéma</a> - <a href="#">Tous les dossiers cinéma</a>
         </section>
     </main>
-    <main id="serie"> <!-- DEBUT SECTION SERIE --> 
+    <main class="lsvertical"> <!-- DEBUT SECTION SERIE --> 
+        <h2 class="titreh2"><a href="http://www.allocine.fr/film/">SERIE</a></h2>
         <nav> <!-- menu serie --> 
-            <ul>
+            <ul class="lshorizontal">
                 <li><a href="#">Meilleures series</a></li>
                 <li><a href="#">Episodes inedit ce soir a la TV</a></li>
                 <li><a href="#">Series TV inedites a voir</a></li>
                 <li><a href="#">Dernieres video de serie</a></li>
             </ul>
         </nav>
-        <section> <!-- Top serie de la semaine --> 
-            <h3><a href="http://www.allocine.fr/series/top/">Top séries de la semaine</a></h3>
-            <ul>
-                <li>
-                    <a href="#">
-                        <figure> <!-- Creation d'image avec legende et lien -->
-                            <img src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg" alt="">
-                            <figcaption>Sous le meme toi</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <figure>
-                            <img src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg" alt="">
-                            <figcaption>Life</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <figure>
-                            <img src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg" alt="">
-                            <figcaption>Cessez le feu</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <figure>
-                            <img src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg" alt="">
-                            <figcaption>Mes vies de chiens</figcaption>
-                        </figure>
-                    </a>
-                </li>
-            </ul>
-            <a href="http://www.allocine.fr/series/top/">Toutes les series les plus consultés</a>
-        </section>
-        <section> <!-- Les series les plus attendues --> 
-            <h3><a href="http://www.allocine.fr/series/top/">Les series les plus attendues</a></h3>
-            <ul>
-                <li>
-                    <a href="#">
-                        <figure> <!-- Creation d'image avec legende et lien -->
-                            <img src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg" alt="">
-                            <figcaption>Sous le meme toi</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <figure>
-                            <img src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg" alt="">
-                            <figcaption>Life</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <figure>
-                            <img src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg" alt="">
-                            <figcaption>Cessez le feu</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <figure>
-                            <img src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg" alt="">
-                            <figcaption>Mes vies de chiens</figcaption>
-                        </figure>
-                    </a>
-                </li>
-            </ul>
-            <a href="http://www.allocine.fr/series/nouvelles/attendues/">Toutes les séries les plus attendues</a>
-        </section>
-        <section> <!-- L'actu series --> 
-            <h3><a href="Toutes les séries les plus attendues">L'ACTUS SERIE</a></h3>
-            <ul class="verticale"> 
-                <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=189525.html">
-                <img src="http://fr.web.img3.acsta.net/newsv7/17/04/19/11/47/451137.jpg" alt="">
-            Walking dead ohe ohe</a>
-                <li><a href="#">Procès du siècle</a></li>
-                <li><a href="#">Momie</a></li>
-                <li><a href="#">Stars Wars - Les Derniers Jedi</a></li>
-                <li><a href="#">Les Gardiens de la Galaxie 2</a></li>
-                <li><a href="#">Thor : Ragnarok</a></li>
-                <li><a href="#">Jour J</a></li>
-                <li><a href="#">Valérian et la Cité des mille planètes</a></li>
-                <li><a href="#">Baywatch - Alerte à Malibu</a></li>
-                <li><a href="#">Alien: Covenant</a></li>
-            </ul>
-            <a href="#">Tous les news serie</a>
+        <section class="lshorizontal"> <!-- parent 2 + 1 block |(Top serie de la semaine + Les series les plus attendues) + L'actu series|--> 
+            <div class="lsvertical"> <!-- |Top serie de la semaine + Les series les plus attendues|-->
+                <div> <!-- Top serie de la semaine --> 
+                            <h3><a href="http://www.allocine.fr/series/top/">Top séries de la semaine</a></h3>
+                            <ul class="lshorizontal">
+                                <li>
+                                    <a href="#">
+                                        <figure> <!-- Creation d'image avec legende et lien -->
+                                            <img src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg" alt="">
+                                            <figcaption>Sous le meme toi</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg" alt="">
+                                            <figcaption>Life</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg" alt="">
+                                            <figcaption>Cessez le feu</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg" alt="">
+                                            <figcaption>Mes vies de chiens</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="http://www.allocine.fr/series/top/">Toutes les series les plus consultés</a>
+                </div>
+                <div> <!-- Les series les plus attendues --> 
+
+                            <h3><a href="http://www.allocine.fr/series/top/">Les series les plus attendues</a></h3>
+                            <ul class="lshorizontal">
+                                <li>
+                                    <a href="#">
+                                        <figure> <!-- Creation d'image avec legende et lien -->
+                                            <img src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg" alt="">
+                                            <figcaption>Sous le meme toi</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg" alt="">
+                                            <figcaption>Life</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg" alt="">
+                                            <figcaption>Cessez le feu</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg" alt="">
+                                            <figcaption>Mes vies de chiens</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="http://www.allocine.fr/series/nouvelles/attendues/">Toutes les séries les plus attendues</a>
+                </div>
+            </div>
+            <div> <!-- L'actu series --> 
+                <h3><a href="Toutes les séries les plus attendues">L'ACTUS SERIE</a></h3>
+                <ul> 
+                            <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=189525.html">
+                            <img src="http://fr.web.img3.acsta.net/newsv7/17/04/19/11/47/451137.jpg" alt="">
+                            Walking dead ohe ohe</a>
+                            <li><a href="#">Procès du siècle</a></li>
+                            <li><a href="#">Momie</a></li>
+                            <li><a href="#">Stars Wars - Les Derniers Jedi</a></li>
+                            <li><a href="#">Les Gardiens de la Galaxie 2</a></li>
+                            <li><a href="#">Thor : Ragnarok</a></li>
+                            <li><a href="#">Jour J</a></li>
+                            <li><a href="#">Valérian et la Cité des mille planètes</a></li>
+                            <li><a href="#">Baywatch - Alerte à Malibu</a></li>
+                            <li><a href="#">Alien: Covenant</a></li>
+                </ul>
+                <a href="#">Tous les news serie</a>
+            </div>
         </section>
     </main>
     <main id="emission"> <!-- DEBUT SECTION EMISSION ALLOCINE --> 
