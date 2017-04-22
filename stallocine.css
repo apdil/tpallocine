@@ -34,15 +34,30 @@ img{
 li{ /*enlever le point ul*/
     list-style-type:none;
 }
-
+a{
+    text-decoration: none;
+    font-family: sans-serif;   
+}
 body{
     background-color: #F2F2F2;
     margin-right:10%;
     margin-left:10%;
 }
-
+html{
+    background-color: grey;
+}
 /*header*/
-
+header{
+    background-color: #FECC00;
+}
+header a{
+    color: #333333;
+}
+header p{
+    background-color: #FFFFFF;
+    font-size: 12px;
+    align-self: center;
+}
 #barre{ /*centrer la barre de recherche*/
     margin:auto;
 }
@@ -57,6 +72,10 @@ body{
 #imgnewcine img{
     width: 100%;
 }
+#emission{
+    background-color: #333333;
+}
+
 
 /*SERIE*/
 
