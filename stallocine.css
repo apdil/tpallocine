@@ -12,7 +12,10 @@
     display:flex;
     flex-direction:column;
 }
-
+.menuliens{
+    display:flex;
+    margin: auto;
+}
 /*police position*/
 .titreh2{
     margin: auto;
@@ -36,12 +39,11 @@ body{
 
 /*header*/
 
-
 #barre{ /*centrer la barre de recherche*/
     margin:auto;
 }
 
-/*les differents main*/
+/*CINEMA*/
 
 #imgnewcine{
     display:flex;
@@ -52,28 +54,15 @@ body{
     width: 100%;
 }
 
-/**********************************/
+/*SERIE*/
 
-#serie nav{
-    background-color: mediumorchid;
-}
-#serie section{
-    background-color: maroon;
-}
 
-/*********************************/
 
-#emission{
-    background-color: orange;
-}
-#emission nav{
-    background-color: mediumblue;
-}
-#emission section{
-    background-color: peru;
-}
+/*EMISSION ALLOCINE*/
 
-/*********************************/
+
+
+/*SE DIVERTIR A LA MAISON*/
 
 #divertir{
     background-color: rosybrown;
@@ -88,4 +77,4 @@ body{
 #stars section{
     background-color: chocolate;
 }
-/*fin main*/
+/*STARS*/
