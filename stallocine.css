@@ -65,11 +65,11 @@ a:hover{
 }
 /************************/
 img{
-    margin-right: 1.2rem; /*l'espace entre les images*/
 }
 .imgsize{
     height:12rem;
     width:9rem;
+    margin-right: 1.2rem; /*l'espace entre les images*/
 }
 img:hover{
     -webkit-filter: brightness(0.70);
@@ -93,25 +93,36 @@ header{
 }
 header p{
     background-color: #FFFFFF;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    margin: auto;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: -1rem;
+    margin-left: -1rem;
 }
 header nav{
     align-items: center;
-    padding-bottom: -1.8rem;
+    margin-bottom: -0.3rem;
 }
 header a{
-    margin-right: 0.4rem;
+    margin-right: 1.2rem;
 }
 header nav a:hover{
-    color:black;
     background-color: white;
     opacity: 0.4;
+}
+.navsmall{
+    font-size: 0.8rem;
+    font-weight: 400;
+
 }
 #barre{ /*centrer la barre de recherche*/
     background-size: auto;
 }
 #home{
-    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    padding: 0.55rem 0.55rem 0.55rem 0.55rem;
     background-color: white;
 }
 
