@@ -1,46 +1,63 @@
-/*Comportement des listes*/
+body{
+    background-color: #FFFFFF;
+    margin-right:10%;
+    margin-left:10%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+html{
+    background-color: grey;
+}
+/*Comportement des listes*********************************************************/
 
-.lshorizontal{ /*liste menu a l'horizontale*/
+.lshorizontal{ /*liste menu a l'horizontale || aussi la bordure*/
     display:flex;
     justify-content: space-between;
     margin: auto;
+    border-top: 0.1rem solid #F0F0F0;
+    border-bottom: 0.1rem solid #F0F0F0;
+    padding: ;
 }
 .lsimage{ /* liste horizontale */
     display:flex;
+    margin-left: 
 }
 .lsvertical{ /* liste verticale */
     display:flex;
     flex-direction:column;
 }
-.menuliens{
-    display:flex;
-    margin: auto;
-}
-/*MARGE*/
-.margimage li{
-    padding-left: -30px;
-    padding-right: -30px;
-}
+
 #repartir{ /*répaartir*/
     display: flex;
     justify-content:space-around;
 }
-/*police*/
+.liensweb{ /*les liens web a la fin de la section STARS*/
+    display:flex;
+    justify-content: center;
+}
+
+/*police***********************************************************************/
 h2{
     margin: auto;
-    font-size:240%;
+    font-size:2.4rem;
     color: #333333;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: 5px solid #FECC00;
+}
+h3{
+    font-size: 1.5rem;
 }
 .finsection{ /* a(lien) fin de section*/
     color:#005EA8;
-    font-size: 80%;
+    font-size: 0.8rem;
 }
 a{
     text-decoration: none;
     font-family: montserratSemiBold, Arial, sans-serif;
     color: #333333;
     display: block;
-    font-weight: 600;
+    font-weight: 700;
 }
 a:hover{
     color:#1ca2eb;
@@ -49,23 +66,13 @@ a:hover{
 img{
     height:12rem;
     width:9rem;
+    margin-right: 1.2rem; /*l'espace entre les images*/
 }
 img:hover{
     -webkit-filter: brightness(0.70);
     filter: brightness(0.70);
 }
-li{ /*enlever le point ul*/
-    list-style-type:none;
-}
-body{
-    background-color: #FFFFFF;
-    margin-right:10%;
-    margin-left:10%;
-}
-html{
-    background-color: grey;
-    font-size:62,5%;
-}
+
 /*header*/
 header{
     background-color: #FECC00;
@@ -81,15 +88,10 @@ header p{
 
 /*CINEMA*/
 
-#imgnewcine{
+#imgnewcine{ /*section new cine*/
     display:flex;
     flex-flow:row wrap;
     justify-content: space-between;
-}
-#imgnewcine img{
-}
-#emission{
-    background-color: #333333;
 }
 
 
@@ -98,10 +100,21 @@ header p{
 
 
 /*EMISSION ALLOCINE*/
-
-
+#emission a {
+    color: #FFFFFF;
+}
+#emission a:hover{
+    color: #FECC00; 
+}
+#emission{
+    background-color: #333333;
+}
 
 /*SE DIVERTIR A LA MAISON*/
-
+#articles{
+    background-color: black;
+    width: 100%;
+    height: 3rem;
+}
 
 /*STARS*/
