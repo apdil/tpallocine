@@ -34,11 +34,11 @@
         <p>Découvrez notre recherche de séances cinéma, les news et dossiers cinéma et séries 
             TV, les émissions AlloCiné, les dernières bandes-annonces et plus encore...</p>
     </header>
-    <section> <!-- AFFICHE (articles) defillements --> 
+    <section id="articles"> <!-- AFFICHE (articles) defillements --> 
         <div>defillement des articles</div>
     </section>
-    <main class="lsvertical"> <!-- DEBUT SECTION CINEMA --> 
-        <h2><a href="http://www.allocine.fr/film/">CINEMA</a></h2>
+    <main id="cinema" class="lsvertical"> <!-- DEBUT SECTION CINEMA --> 
+        <h2><a href="http://www.allocine.fr/film/">CINÉMA</a></h2>
         <nav> <!-- menu Cinema --> 
             <ul class="lshorizontal">
                 <li><a href="http://www.allocine.fr/film/avantpremieres/">Avant-premières</a></li>
@@ -55,7 +55,7 @@
             <div class="lsvertical"> <!-- |sortie de la semaine + toujours a l'affiche|-->
                 <div> <!-- Sortie de la semaine -->
                     <h3><a href="http://www.allocine.fr/film/sorties-semaine/">SORTIE DE LA SEMAINE</a></h3>
-                    <ul class="lsimage margimage">
+                    <ul class="lsimage">
                         <li>
                             <a href="#">
                                 <figure> <!-- Creation d'image avec legende et lien -->
@@ -341,12 +341,14 @@
     </main>
     <main id="emission" class="lsvertical"> <!-- DEBUT SECTION EMISSION ALLOCINE --> 
         <h2><a href="http://www.allocine.fr/film/">EMISSION ALLOCINE</a></h2>
-        <nav class="lshorizontal"> <!-- menu emission allocine --> 
-            <li><a href="#">Fanzone</a></li>
-            <li><a href="#">Faux-raccord</a></li>
-            <li><a href="#">Aviez vous remarquez</a></li>
-            <li><a href="#">Top 5</a></li>
-            <li><a href="#">Allocine serie</a></li>
+        <nav> <!-- menu emission allocine --> 
+            <ul class="lshorizontal">
+                <li><a href="#">Fanzone</a></li>
+                <li><a href="#">Faux-raccord</a></li>
+                <li><a href="#">Aviez vous remarquez</a></li>
+                <li><a href="#">Top 5</a></li>
+                <li><a href="#">Allocine serie</a></li>
+            </ul>
         </nav>
         <section>
             <a href="#"><img src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt=""></a>
