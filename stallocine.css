@@ -16,6 +16,10 @@
     display:flex;
     margin: auto;
 }
+#repartir{
+    display: flex;
+    justify-content:space-around;
+}
 /*police position*/
 .titreh2{
     margin: auto;
@@ -64,17 +68,5 @@ body{
 
 /*SE DIVERTIR A LA MAISON*/
 
-#divertir{
-    background-color: rosybrown;
-}
 
-#stars{
-    background-color: purple;
-}
-#stars nav{
-    background-color: darkolivegreen;
-}
-#stars section{
-    background-color: chocolate;
-}
 /*STARS*/
