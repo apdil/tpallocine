@@ -14,7 +14,6 @@ html{
 .lshorizontal{ /*liste menu a l'horizontale || aussi la bordure*/
     display:flex;
     justify-content: space-around;
-    align-items: center;
     margin: auto;
     border-top: 0.1rem solid #F0F0F0;
     border-bottom: 0.1rem solid #F0F0F0;
@@ -26,7 +25,9 @@ html{
     display:flex;
     flex-direction:column;
 }
-
+.lscentre{ /* pour menu sous h2 */
+    align-items: center;
+}
 #repartir{ /*répaartir*/
     display: flex;
     justify-content:space-around;
@@ -35,34 +36,40 @@ html{
     display:flex;
     justify-content: center;
 }
-
+.smallsection{ /* espace entre h3 et section */
+    margin-top: -1.1rem;
+}
 /*police***********************************************************************/
 h2{
     margin: auto;
-    font-size:2.4rem;
+    font-size:2.75rem;
     color: #333333;
     margin-bottom: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     border-top: 5px solid #FECC00;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 p{
     color:#B3B3C1;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
+}
+.phauteur{ /* sous les images avec legende */
+    margin-top: 0.3rem;
 }
 .finsection{ /* a(lien) fin de section*/
     color:#005EA8;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 a{
     text-decoration: none;
     font-family: montserratSemiBold, Arial, sans-serif;
     color: #333333;
     font-weight: 700;
+    font-size: 0.9em;
 }
 a:hover{
     color:#1ca2eb;
@@ -70,7 +77,7 @@ a:hover{
 /************************/
 
 .imgsize{
-    height:12rem;
+    height:11.5rem;
     width:9rem;
     margin-right: 1.2rem; /*l'espace entre les images*/
 }
@@ -78,14 +85,13 @@ a:hover{
     -webkit-filter: brightness(0.70);
     filter: brightness(0.70);
 }
-.cacher{
-    display:none;
+#prochainement{ /* placement section prochainement */
+    margin-top: -2.5rem;
 }
-/*imgsize:hover .cacher { /*liens cacher dans les images*/
-/*    display:block;
-/*    font-size: 23rem;
-/*    text-align: center;
-/*}*/
+.imglarge{ /* image actu serie */
+    width:100%;
+    height: 8rem;
+}
 /*********************************************************************************HEADER*/
 header{
     background-color: #FECC00;
@@ -148,7 +154,10 @@ header nav a:hover{
 }
 
 /************************************************************************************CINEMA*/
-
+#cinema article{
+    background-color: #F0F0F0;
+    height:4rem;
+}
 #imgnewcine{ /*section new cine*/
     display:flex;
     flex-flow:row wrap;
@@ -162,13 +171,24 @@ header nav a:hover{
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #ECECEC;
+} 
+.imgtabcacher{
+    display:none;
 }
-.tabvideo:hover{ /* image video */
-    color: yellow;
+.tabvideo :hover{ /* image video hover */
+    
 }
+.tabvideo :hover .imgtabcacher{
+    display:block;
+}
+
 /*SERIE*/
 
-
+.tabserie{
+    border-bottom: 0.1rem solid #D5D5D5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 /*EMISSION ALLOCINE*/
 #emission a {
