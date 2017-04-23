@@ -48,6 +48,12 @@ h2{
 h3{
     font-size: 1.5rem;
 }
+p{
+    color:#B3B3C1;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
 .finsection{ /* a(lien) fin de section*/
     color:#005EA8;
     font-size: 0.8rem;
@@ -68,7 +74,7 @@ a:hover{
     width:9rem;
     margin-right: 1.2rem; /*l'espace entre les images*/
 }
-imgsize:hover{
+.imgsize:hover{
     -webkit-filter: brightness(0.70);
     filter: brightness(0.70);
 }
@@ -114,12 +120,12 @@ header nav a:hover{
     background-color: white;
     opacity: 0.4;
 }
-.navsmall{
+.navsmall{ /*petit menu au centre*/
     font-size: 0.8rem;
     font-weight: 400;
 }
 
-#home{
+#home{ /*bouton home*/
     padding: 0.55rem 0.65rem 0.8rem 0.65rem;
     background-color: white;
     margin-right: 0.5em;
@@ -148,8 +154,18 @@ header nav a:hover{
     flex-flow:row wrap;
     justify-content: space-between;
 }
-
-
+#imgpirate{
+    width:6rem;
+    height:8rem;
+}
+.tabvertical{ /* tableau prochainement*/
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ECECEC;
+}
+.tabvideo:hover{ /* image video */
+    color: yellow;
+}
 /*SERIE*/
 
 
