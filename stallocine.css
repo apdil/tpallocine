@@ -6,9 +6,17 @@ body{
     padding-right: 1.5%;
 }
 html{
-    background-color: grey;
+    background-color: #F2F2F2;
 }
-
+#pub{
+    width: auto;
+    height:8rem;
+    background-color: black;
+}
+#bdannonces{ /* grand image bande annonces */
+    width: 42rem;
+    height:23rem;
+}
 /*Comportement des listes*********************************************************/
 
 .lshorizontal{ /*liste menu a l'horizontale || aussi la bordure*/
