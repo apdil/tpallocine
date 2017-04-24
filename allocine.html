@@ -10,14 +10,20 @@
 <body> 
     <header class="lsvertical"> <!-- CREATION BANDEROLE -->
         <div class="lsimage"> <!-- block |logo + barre de recherche| -->
-            <a href="#"><img src="image/banderol.png" alt=""></a>
-            <div id="barre">Barre de recherche</div>
+            <div><a href="#"><img src="image/banderol.png" alt=""></a></div>
+            <form action="ppp">
+                <p>
+                    <input id="textheader" type="text" name="header"><label for="header"></label>
+                    <input id="submitheader" type="submit" name="push" value="Rechercher"><label for="push"></label>
+                </p>
+                <p id="commentaire" class="smallsection">balbablablab</p>
+            </form>
         </div>
         <div id="headerposition" class="lsimage"> <!-- block |menu + espace perso|-->
             <nav class="lsimage"> <!-- menu principale -->
                 <img id="home" src="image/home.png" alt="">
                 <a href="http://www.allocine.fr/film/">CINÉMA</a>
-                <a href="http://www.allocine.fr/series/">SÉRIE</a>
+                <a href="http://www.allocine.fr/series/">SÉRIES</a>
                 <a href="http://www.allocine.fr/video/">ÉMISSIONS</a>
                 <a href="http://www.allocine.fr/news/">NEWS</a>
                 <a class="navsmall" href="http://www.allocine.fr/bo/"><img src="image/music.png" alt=""> B.O.</a>
@@ -34,20 +40,26 @@
     <section id="articles"> <!-- AFFICHE (articles) defillements --> 
         <div>defillement des articles</div>
     </section>
-    <main id="cinema" class="lsvertical"> <!-- DEBUT SECTION CINEMA --> 
+    <main id="cinema" class="lsvertical paddingbody"> <!-- DEBUT SECTION CINEMA --> 
         <h2><a href="http://www.allocine.fr/film/">CINÉMA</a></h2>
         <nav> <!-- menu Cinema --> 
             <div class="lshorizontal lscentre">
-                <a href="http://www.allocine.fr/film/avantpremieres/">Avant-premières</a>
-                <a href="http://www.allocine.fr/film/agenda/">Agenda des sorties</a>
-                <a href="http://www.allocine.fr/film/enfants/aucinema/">Films pour enfant à l'affiche</a>
-                <a href="http://www.allocine.fr/news/cinema/">Actus cinés</a>
-                <a href="http://www.allocine.fr/film/meilleurs/">Meilleures films</a>
-                <a href=#><img src="image/plus.png"></a>
+                <a class="lsimage lscentre" href="http://www.allocine.fr/film/avantpremieres/"><p class="pdiez">#</p>Avant-premières</a>
+                <a class="lsimage lscentre" href="http://www.allocine.fr/film/agenda/"><p class="pdiez">#</p>Agenda des sorties</a>
+                <a class="lsimage lscentre" href="http://www.allocine.fr/film/enfants/aucinema/"><p class="pdiez">#</p>Films pour enfant à l'affiche</a>
+                <a class="lsimage lscentre" href="http://www.allocine.fr/news/cinema/"><p class="pdiez">#</p>Actus cinés</a>
+                <a class="lsimage lscentre" href="http://www.allocine.fr/film/meilleurs/"><p class="pdiez">#</p>Meilleures films</a>
+                <a class="lsimage lscentre" href=#><img src="image/plus.png"></a>
             </div>
         </nav>
-        <article> <!-- barre de recherche --> 
-            <div>barre de recherche</div> <!--realisation barre de recherche -->
+        <article class="lsrepartir"> <!-- barre de recherche --> 
+                <div><form action="">
+                    <p>
+                        <input id="textcinema" type="text" name="recherche"><label for="recherche"></label>
+                        <input id="submitcinema" type="submit" name="recherch" value="Rechercher"><label for="recherche"></label>
+                    </p>
+                </form></div>
+                <div><a class="lienrecherche" href="#">Connectez-vous pour rechercher dans vos cinémas favoris</a></div>
         </article>
         <section class="lsimage"> <!-- parent 2 + 1 block |(sortie de la semain + toujours a l'affiche) + prochainement|-->
             <div class="lsvertical"> <!-- |sortie de la semaine + toujours a l'affiche|-->
@@ -200,14 +212,15 @@
             <a class="finsection" href="#">Toutes les news cinéma</a> - <a class="finsection" href="#">Tous les dossiers cinéma</a>
         </section>
     </main>
-    <main class="lsvertical"> <!-- DEBUT SECTION SERIE --> 
-        <h2><a href="http://www.allocine.fr/film/">SERIE</a></h2>
+    <main class="lsvertical paddingbody"> <!-- DEBUT SECTION SERIE --> 
+        <h2><a href="http://www.allocine.fr/film/">SÉRIES</a></h2>
         <nav> <!-- menu serie --> 
             <div class="lshorizontal">
-                <a href="#">Meilleures series</a>
-                <a href="#">Episodes inedit ce soir a la TV</a>
-                <a href="#">Series TV inedites a voir</a>
-                <a href="#">Dernieres video de serie</a>
+                <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Meilleures series</a>
+                <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Episodes inedit ce soir a la TV</a>
+                <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Series TV inedites a voir</a>
+                <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Dernieres video de serie</a>
+                <img class="plus" src="image/plus.png" alt="">
             </div>
         </nav>
         <section class="lsimage"> <!-- parent 2 + 1 block |(Top serie de la semaine + Les series les plus attendues) + L'actu series|--> 
@@ -273,35 +286,38 @@
             </div>
         </section>
     </main>
-    <main id="emission" class="lsvertical"> <!-- DEBUT SECTION EMISSION ALLOCINE --> 
-        <h2><a href="http://www.allocine.fr/film/">ÉMISSIONS ALLOCINÉ</a></h2>
-        <p class="smallsection">Les dernières émissions proposées par la Rédac</p>
-        <nav> <!-- menu emission allocine --> 
-            <div class="lshorizontal">
-                <a href="#">Fanzone</a>
-                <a href="#">Faux-raccord</a>
-                <a href="#">Aviez vous remarquez</a>
-                <a href="#">Top 5</a>
-                <a href="#">Allocine serie</a>
-            </div>
-        </nav>
-        <section>
-            <a href="#"><img src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt=""></a>
-            <div class="lsimage">
-                <a href="#"><img src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                <figcaption>Légende associée</figcaption>
-                </a>
-                <a href="#"><img src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                <figcaption>Légende associée</figcaption>
-                </a>
-                <a href="#"><img src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                <figcaption>Légende associée</figcaption>
-                </a>
-            </div>
-        </section>
-        <section> <!-- video des emisssions --> </section>
+    <main> <!-- DEBUT SECTION EMISSION ALLOCINE --> 
+        <div id="emission" class="paddingbody lsvertical">
+            <h2><a href="http://www.allocine.fr/film/">ÉMISSIONS ALLOCINÉ</a></h2>
+            <p class="smallsection">Les dernières émissions proposées par la Rédac</p>
+            <nav> <!-- menu emission allocine --> 
+                <div class="lshorizontal">
+                    <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Fanzone</a>
+                    <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Faux-raccord</a>
+                    <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Aviez vous remarquez</a>
+                    <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Top 5</a>
+                    <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Allocine serie</a>
+                    <img class="plus" src="image/plus.png" alt="">
+                </div>
+            </nav>
+            <section>
+                <a href="#"><img src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt=""></a>
+                <div class="lsimage">
+                    <a href="#"><img src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                    <figcaption>Légende associée</figcaption>
+                    </a>
+                    <a href="#"><img src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                    <figcaption>Légende associée</figcaption>
+                    </a>
+                    <a href="#"><img src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                    <figcaption>Légende associée</figcaption>
+                    </a>
+                </div>
+            </section>
+            <section> <!-- video des emisssions --> </section>
+        </div>
     </main>
-    <main class="lsvertical"> <!-- DEBUT SECTION SE DIVERTIR A LA MAISON --> 
+    <main class="lsvertical paddingbody"> <!-- DEBUT SECTION SE DIVERTIR A LA MAISON --> 
         <h2>SE DIVERTIR A LA MAISON</h2>
         <section class="lsimage" id="repartir">
             <section> <!-- Ce soir a la tele --> 
@@ -332,13 +348,14 @@
             </section>
         </section>
     </main>
-    <main class="lsvertical"> <!-- DEBUT SECTION STARS --> 
+    <main class="lsvertical paddingbody"> <!-- DEBUT SECTION STARS -->  
         <h2><a href="http://www.allocine.fr/film/">STARS</a></h2>
         <nav> <!-- menu stars --> 
             <div class="lshorizontal">
-                <a href="#">Interview</a>
-                <a href="#">Anniversaires</a>
-                <a href="#">Toutes les stars</a>
+                <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Interview</a>
+                <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Anniversaires</a>
+                <a class="lsimage lscentre" href="#"><p class="pdiez">#</p>Toutes les stars</a>
+                <img class="plus" src="image/plus.png" alt="">
             </div>
         </nav>
         <section> <!-- les differentes stars --> 
