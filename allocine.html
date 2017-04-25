@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +32,16 @@
                 <a class="navsmall" href="http://www.allocine.fr/vod/">VOD</a>
                 <a class="navsmall" href="http://www.allocine.fr/netflix/">NETFLIX</a> 
             </nav>
-            <a href="#" id="monallocine"><img id="imagllocine"src="image/espace.png"> MON ALLOCINÉ <img src="image/bas.png"></a>
+            <div id="menuderoulant" class="lsvertical">
+                <a href="#" id="monallocine"><img id="imagllocine"src="image/espace.png"> MON ALLOCINÉ <img src="image/bas.png"></a>
+                <div id="cache" class="vertical">
+                    <div><a href="#">maison</a></div>
+                    <div><a href="">pôme</a></div>
+                    <div><a href="">oke</a></div>
+                    <div><a href="">ffefe</a></div>
+                    <div><a href="">fefe</a></div>
+                </div>
+            </div>
         </div>
         <div><p>Découvrez notre recherche de séances cinéma, les news et dossiers cinéma et séries 
             TV, les émissions AlloCiné, les dernières bandes-annonces et plus encore...</p></div>
@@ -66,21 +75,29 @@
                 <div> <!-- Sortie de la semaine -->
                     <h3><a href="http://www.allocine.fr/film/sorties-semaine/">SORTIE DE LA SEMAINE</a></h3>
                     <div class="lsimage smallsection">
-                        <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg" alt="Sous le meme toi">
-                        <figcaption>Sous le meme toi</figcaption>
-                        <p class="phauteur">blalalalala</p>
-                        </a>
+                        <div id="cacheimage">
+                            <div>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg" alt="Sous le meme toi">
+                                <figcaption>Sous le meme toi</figcaption>
+                                <p class="phauteur">blalalalala</p>
+                                </a>
+                                </div>
+                            <div>
+                                <a class="salle" href="#">Séances</a>
+                                <a class="salle" href="#">Bandes-annonce</a> 
+                            </div>
+                        </div>
                         <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg" alt="">
                         <figcaption>Life</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg" alt="">
                         <figcaption>Cessez le feu</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg" alt="">
                         <figcaption>Mes vies de chiens</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                     </div>
                     <a class="finsection" href="http://www.allocine.fr/film/sorties-semaine/">Toutes les sorties de la semaine</a>
@@ -90,19 +107,19 @@
                     <div class="lsimage smallsection">
                         <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/03/03/17/27/305158.jpg" alt="">
                         <figcaption>Fast and Furious 8</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/07/14/19/010723.jpg" alt="">
                         <figcaption>Boul et Bill</figcaption>
-                        <p class="phauteur">blalalalala</p>                      
+                        <p class="phauteur"> Drame, Thriller </p>                      
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/17/03/01/17/45/314818.jpg" alt="">
                         <figcaption>Ghost in the Shell</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         <a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/10/15/19/165083.jpg" alt="">
                         <figcaption>Sages Femmes</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         <a>
                     </div>
                     <a class="finsection" href="http://www.allocine.fr/film/sorties-semaine/">Tous les films encore à l'affiche</a>
@@ -164,17 +181,22 @@
         </section>
         <section class="bottomsection"> <!-- Bandes annonces a ne pas manquer --> 
             <h3><a href="#">BANDES ANNONCES A NE PAS MANQUER</a></h3>
-            <div class="smallsection">
-                <div><a href="#"><img id="bdannonces" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/16/07/11/17/30/417359.jpg" alt=""></a><div>
-                <div class="lsimage lsrepartir bottomsection">
-                        <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/02/08/15/54/313963.jpg" alt="">
-                        </a>
-                        <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/04/21/16/27/000018.jpg" alt="">
-                        </a>
-                        <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/09/11/32/053359.jpg" alt="">
-                        </a>
-                        <a href="#"><img class="imgsize" src="http://fr.web.img5.acsta.net/r_1920_1080/pictures/17/04/14/19/34/436860.jpg" alt="">
-                        </a>
+            <div class="lsimage">
+                <div class="smallsection lsvertical">
+                    <div><a href="#"><img id="bdannonces" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/16/07/11/17/30/417359.jpg" alt=""></a></div>
+                    <div class="lsimage lsrepartir bottomsection">
+                                <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/02/08/15/54/313963.jpg" alt="">
+                                </a>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/04/21/16/27/000018.jpg" alt="">
+                                </a>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/09/11/32/053359.jpg" alt="">
+                                </a>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img5.acsta.net/r_1920_1080/pictures/17/04/14/19/34/436860.jpg" alt="">
+                                </a>
+                    </div>
+                </div>
+                <div>
+                    pub
                 </div>
             </div>
             <a class="finsection" href="#">Toutes les bandes-annonces à ne pas manquer</a>
@@ -182,68 +204,75 @@
         <section class="bottomsection"> <!-- Derniers news cinema --> 
             <h3><a href="#">DERNIÈRES NEW CINÉMA</a></h3>
             <div id="imgnewcine" class="smallsection">
-                <div>
-                    <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                    <figcaption>Légende associée</figcaption>
-                    </a>
-                    <p>blalalalala</p>
-                    <p>mamamamamamam</p>
+                <div class="lsimage">
+                    <div>
+                        <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                        <figcaption>Mr. Bean bientôt de retour ?</figcaption>
+                        </a>
+                        <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
+                        <p class="legendimg">mamamamamamam</p>
+                    </div>
+                    <div>
+                        <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                        <figcaption>Bande-annonce Kingsman 2 : quand le cowboy Channing Tatum vient prêter main forte...</figcaption>
+                        </a>
+                        <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
+                        <p class="legendimg">mamamamamamam</p>
+                    </div>
+                    <div>
+                        <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                        <figcaption>Avengers 4 : le titre du film Marvel a-t-il été révélé ?</figcaption>
+                        </a>
+                        <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
+                        <p class="legendimg">mamamamamamam</p>
+                    </div>
                 </div>
-                <div>
-                    <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                    <figcaption>Légende associée</figcaption>
-                    </a>
-                    <p>blalalalala</p>
-                    <p>mamamamamamam</p>
+                <div class="lsimage">
+                    <div>
+                        <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                        <figcaption>Bande-annonce Braquage à l’ancienne : Morgan Freeman et Michael Caine, braqueurs de banque pour Zach Braff 
+                        Sponsorisé</figcaption>
+                        </a>
+                        <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
+                        <p class="legendimg">mamamamamamam</p>
+                    </div>
+                    <div>
+                        <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                        <figcaption>Hier soir à la télé : vous avez aimé Ocean's Eleven ? On vous recommande...</figcaption>
+                        </a>
+                        <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
+                        <p class="legendimg">mamamamamamam</p>
+                    </div>
+                    <div>
+                        <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                        <figcaption>Jeeg Robot : un film de super-héros italien, réaliste et social [INTERVIEW]</figcaption>
+                        </a>
+                        <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
+                        <p class="legendimg">mamamamamamam</p>
+                    </div>
                 </div>
-                <div>
-                    <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                    <figcaption>Légende associée</figcaption>
-                    </a>
-                    <p>blalalalala</p>
-                    <p>mamamamamamam</p>
-                </div>
-                <div>
-                    <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                    <figcaption>Légende associée</figcaption>
-                    </a>
-                    <p>blalalalala</p>
-                    <p>mamamamamamam</p>
-                </div>
-                <div>
-                    <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                    <figcaption>Légende associée</figcaption>
-                    </a>
-                    <p>blalalalala</p>
-                    <p>mamamamamamam</p>
-                </div>
-                <div>
-                    <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                    <figcaption>Légende associée</figcaption>
-                    </a>
-                    <p>blalalalala</p>
-                    <p>mamamamamamam</p>
-                </div>
-                <div>
-                    <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                    <figcaption>Légende associée</figcaption>
-                    </a>
-                    <p>blalalalala</p>
-                    <p>mamamamamamam</p>
-                </div>
-                <div>
-                    <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                    <figcaption>Légende associée</figcaption>
-                    </a>
-                    <p>blalalalala</p>
-                    <p>mamamamamamam</p>
-                </div>
-                <div>
-                    <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
-                    <figcaption>Légende associée</figcaption>
-                    </a>
-                    <p>blalalalala</p>
-                    <p>mamamamamamam</p>
+                <div class="lsimage">
+                    <div>
+                        <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                        <figcaption>Ocean's Eleven sur France 3 : 5 choses à savoir sur le film de casse culte de Soderbergh</figcaption>
+                        </a>
+                        <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
+                        <p class="legendimg">mamamamamamam</p>
+                    </div>
+                    <div>
+                        <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                        <figcaption>Kristen Stewart, Daniel Radcliffe... Que deviennent les enfants stars des années 2000 ?</figcaption>
+                        </a>
+                        <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
+                        <p class="legendimg">mamamamamamam</p>
+                    </div>
+                    <div>
+                        <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg" alt="">
+                        <figcaption>Spider-Man bondit sur les photos d'Homecoming</figcaption>
+                        </a>
+                        <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
+                        <p class="legendimg">mamamamamamam</p>
+                    </div>
                 </div>
             </div>
             <a class="finsection" href="#">Toutes les news cinéma</a> - <a class="finsection" href="#">Tous les dossiers cinéma</a>
@@ -267,19 +296,19 @@
                     <div class="lsimage smallsection">
                         <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg" alt="">
                         <figcaption>Sous le meme toi</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg" alt="">
                         <figcaption>Life</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg" alt="">
                         <figcaption>Cessez le feu</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg" alt="">
                         <figcaption>Mes vies de chiens</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                     </div>
                     <a class="finsection" href="http://www.allocine.fr/series/top/">Toutes les series les plus consultés</a>
@@ -289,19 +318,19 @@
                     <div class="lsimage smallsection">
                         <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg" alt="">
                         <figcaption>Sous le meme toi</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg" alt="">
                         <figcaption>Life</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg" alt="">
                         <figcaption>Cessez le feu</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                         <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg" alt="">
                         <figcaption>Mes vies de chiens</figcaption>
-                        <p class="phauteur">blalalalala</p>
+                        <p class="phauteur"> Drame, Thriller </p>
                         </a>
                     </div>
                     <a class="finsection" href="http://www.allocine.fr/series/nouvelles/attendues/">Toutes les séries les plus attendues</a>
@@ -312,18 +341,42 @@
                 <div class="lsvertical smallsection">
                     <a class="tabserie" href="http://www.allocine.fr/film/fichefilm_gen_cfilm=189525.html"><img class="imglarge" src="http://fr.web.img3.acsta.net/newsv7/17/04/19/11/47/451137.jpg" alt="">
                     Walking dead ohe ohe blalalalallalalal allalala alla lalala lala lal</a>
-                    <a class="tabserie"href="#">Ron Howard sur la série Genius : "Einstein n'est pas que ce scientifique fou qui tire la langue"</a>
-                    <a class="tabserie"href="#">American Epic : la série de Jack White et Robert Redford sur les premiers enregistrements musicaux aux Etats-Unis se dévoile</a>
-                    <a class="tabserie"href="#">Doctor Who : un acteur de Game of Thrones et Harry Potter dans le prochain épisode de Noël ?</a>
-                    <a class="tabserie"href="#">Crazy Ex-Girlfriend : rencontre avec Rachel Bloom, la star de cette série déjantée qui débute sur Téva</a>
-                    <a class="tabserie"href="#">Justin Theroux : "Le public sera satisfait de la fin de The Leftovers" [INTERVIEW]</a>
-                    <a class="tabserie"href="#">Riverdale : 5 choses que vous ignoriez peut-être sur K.J. Apa, l'interprète d'Archie !</a>
-                    <a class="finsection" href="#">Tous les news serie</a>
+                    <div class="tabserie">
+                        <p class="legendimgjaune legendimgsize">NEWS - AU PROGRAMME</p>
+                        <p class="legendimgsize">Date</p>
+                        <a href="#">Ron Howard sur la série Genius : "Einstein n'est pas que ce scientifique fou qui tire la langue"</a>
+                    </div>
+                    <div class="tabserie">
+                        <p class="legendimgjaune legendimgsize">NEWS - AU PROGRAMME</p>
+                        <p class="legendimgsize">Date</p> 
+                        <a href="#">American Epic : la série de Jack White et Robert Redford sur les premiers enregistrements musicaux aux Etats-Unis se dévoile</a>
+                    </div>
+                    <div class="tabserie">
+                        <p class="legendimgjaune legendimgsize">NEWS - AU PROGRAMME</p>
+                        <p class="legendimgsize">Date</p>
+                        <a href="#">Doctor Who : un acteur de Game of Thrones et Harry Potter dans le prochain épisode de Noël ?</a>
+                    </div>
+                    <div class="tabserie">
+                        <p class="legendimgjaune legendimgsize">NEWS - AU PROGRAMME</p>
+                        <p class="legendimgsize">Date</p>
+                        <a href="#">Crazy Ex-Girlfriend : rencontre avec Rachel Bloom, la star de cette série déjantée qui débute sur Téva</a>
+                    </div>
+                    <div class="tabserie">
+                        <p class="legendimgjaune legendimgsize">NEWS - AU PROGRAMME</p>
+                        <p class="legendimgsize">Date</p>
+                        <a href="#">Justin Theroux : "Le public sera satisfait de la fin de The Leftovers" [INTERVIEW]</a>
+                    </div>
+                    <div class="tabserie">
+                        <p class="legendimgjaune legendimgsize">NEWS - AU PROGRAMME</p>
+                        <p class="legendimgsize">Date</p>
+                        <a href="#">Riverdale : 5 choses que vous ignoriez peut-être sur K.J. Apa, l'interprète d'Archie !</a>
+                    </div>
+                        <a class="finsection" href="#">Tous les news serie</a>
                 </div>
             </div>
         </section>
     </main>
-    <main> <!-- DEBUT SECTION EMISSION ALLOCINE --> 
+    <main class="bottomsection"> <!-- DEBUT SECTION EMISSION ALLOCINE --> 
         <div id="emission" class="paddingbody lsvertical">
             <h2><a href="http://www.allocine.fr/film/">ÉMISSIONS ALLOCINÉ</a></h2>
             <p id ="soustitre" class="smallsection">Les dernières émissions proposées par la Rédac</p>
@@ -357,27 +410,27 @@
     <main class="lsvertical paddingbody"> <!-- DEBUT SECTION SE DIVERTIR A LA MAISON --> 
         <h2>SE DIVERTIR A LA MAISON</h2>
         <section class="lsimage" id="repartir">
-            <section> <!-- Ce soir a la tele --> 
+            <section class="widthtrois lsvertical"> <!-- Ce soir a la tele --> 
                 <div>
-                    <h4><a href="#">Ce soir à la télé</a></h4>
-                    <a href=""><img src="http://fr.web.img5.acsta.net/r_640_600/b_1_d6d6d6/pictures/17/04/18/17/39/074062.jpg" alt="">
+                    <h4><a href="#">CE SOIR À LA TÉLÉ</a></h4>
+                    <a href=""><img src="image/homme.png" alt="">
                     </a>
-                    <a href=""><img src="http://fr.web.img5.acsta.net/r_640_600/b_1_d6d6d6/pictures/17/04/18/17/39/074062.jpg" alt="">
+                    <a href=""><img src="image/jedai.png" alt="">
                     </a>
-                    <a href=""><img src="http://fr.web.img5.acsta.net/r_640_600/b_1_d6d6d6/pictures/17/04/18/17/39/074062.jpg" alt="">
+                    <a href=""><img src="image/esprit.png" alt="">
                     </a>
                 </div>
                 <a class="finsection" href="">Voir le programme TV de ce soir</a>
             </section>
-            <section> <!-- Films en VOD --> 
-                <h4><a href="#">Films en VOD</a></h4>
+            <section class="widthtrois lsvertical"> <!-- Films en VOD --> 
+                <h4><a href="#">FILMS EN VOD</a></h4>
                 <a href="#">Nouveaux films en VOD</a>
                 <a href="#">Meilleurs films en VOD</a>
                 <a href="#">Tous les films en VOD</a>
                 <a class="finsection" href="#">Voir tous les films en VOD</a>
             </section>
-            <section> <!-- Sortie DVD bluray --> 
-                <h4><a href="#">Sortie DVD/BLURAY</a></h4>
+            <section class="widthtrois lsvertical"> <!-- Sortie DVD bluray --> 
+                <h4><a href="#">SORTIE EN DVD/BLURAY</a></h4>
                 <a href="#">Nouveaux films en DVD/BLURAY</a>
                 <a href="#">Meilleurs films en DVD/BLURAY</a>
                 <a href="#">Tous les films en DVD/BLURAY</a>
