@@ -55,8 +55,8 @@ html{
     justify-content:space-around;
     align-items: center;
 }
-.lsjsflexend{
-    justify-content: flex-end;
+.lsaiflexend{
+    align-items: flex-end;
 }
 .smallsection{ /* espace entre h3 et section */
     margin-top: -1.1rem;
@@ -65,7 +65,10 @@ html{
     width:33.333333%
 }
 .widthtroiscinq{
-    width:40%
+    width:38.5%
+}
+.widthdeux{
+    width:25%;
 }
 .textalign{
     text-align:auto;
@@ -96,6 +99,7 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
+
 .phauteur{ /* sous les images avec legende */
     margin-top: 0.3rem;
 }
@@ -354,7 +358,17 @@ header nav a:hover{
     width: 100%;
     height: 3rem;
 }
-
+/*FOOTER*/
 footer{
     background-color: #222222;
+}
+.borderfooter{
+    border-bottom: 1px solid #3B3B3B;
+}
+.borderfootermargin{
+    border-left: 1px solid #3B3B3B;
+    border-right:1px solid #3B3B3B;
+}
+.footerpolice{
+    color:#E6E6E6;
 }
