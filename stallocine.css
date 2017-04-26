@@ -22,7 +22,9 @@ html{
 .bottomsection{
     margin-bottom: 3rem;
 }
-
+figure{
+    margin:0;
+}
 /*Comportement des listes*********************************************************/
 
 .lshorizontal{ /*liste menu a l'horizontale || aussi la bordure*/
@@ -95,13 +97,19 @@ h6{
 }
 p{
     color:#B3B3C1;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+figcaption{
+    color:#B3B3C1;
+    font-size: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
 
 .phauteur{ /* sous les images avec legende */
-    margin-top: 0.3rem;
+    margin-top: 0.1rem;
 }
 .finsection{ /* a(lien) fin de section*/
     color:#005EA8;
@@ -252,7 +260,7 @@ header nav a:hover{
     margin-right: -0.27rem;
 }
 /************************************************************************************CINEMA*/
-#cinema article{
+#search{
     background-color: #F0F0F0;
     height:5rem;
 }
@@ -288,16 +296,6 @@ header nav a:hover{
 .lienrecherche{
     font-weight: 400;
     color: #005EB5;
-}
-.salle{ /* lien sous les images */
-    display:none;
-    margin-top: 3rem;
-
-}
-#cacheimage:hover .salle{
-    display:block;
-    position: absolute;
-    margin-top: -5rem;
 }
 .tabvertical{ /* tableau prochainement*/
     justify-content: space-between;

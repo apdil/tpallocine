@@ -20,8 +20,8 @@
                 </div>
                 <form action="ppp">
                     <p>
-                        <input id="textheader" type="text" name="header"><label for="header"></label>
-                        <input id="submitheader" type="submit" name="push" value="Rechercher"><label for="push"></label>
+                        <input id="textheader" type="text" name="header"><label for="textheader"></label>
+                        <input id="submitheader" type="submit" name="push" value="Rechercher"><label for="submitheader"></label>
                     </p>
                     <p id="commentaire" class="smallsection">balbablablab</p>
                 </form>
@@ -59,13 +59,13 @@
         </header>
         <section id="articles">
             <!-- AFFICHE (articles) defillements -->
-            <div>defillement des articles</div>
+            <div>
+                <h2>defillement des articles</h2>
+            </div>
         </section>
-        <main id="cinema" class="lsvertical paddingbody">
-            <!-- DEBUT SECTION CINEMA -->
+        <main id="cinema" class="lsvertical paddingbody"><!-- DEBUT SECTION CINEMA -->
             <h2><a href="http://www.allocine.fr/film/">CINÉMA</a></h2>
-            <nav>
-                <!-- menu Cinema -->
+            <nav><!-- menu Cinema -->
                 <div class="lshorizontal lscentre">
                     <a class="lsimage lscentre" href="http://www.allocine.fr/film/avantpremieres/">
                         <p class="pdiez">#</p>Avant-premières</a>
@@ -80,165 +80,161 @@
                     <a class="lsimage lscentre" href=#><img src="image/plus.png" alt="plus"></a>
                 </div>
             </nav>
-            <article class="lsrepartir">
-                <!-- barre de recherche -->
+            <div id="search" class="lsrepartir"><!-- barre de recherche -->
                 <form action="recherche">
                     <fieldset>
-                        <input id="textcinema" type="text" name="recherche"><label for="recherche"></label>
-                        <input id="submitcinema" type="submit" name="recherch" value="Rechercher"><label for="recherche"></label>
+                        <input id="textcinema" type="text" name="recherche"><label for="textcinema"></label>
+                        <input id="submitcinema" type="submit" name="recherch" value="Rechercher"><label for="submitcinema"></label>
                     </fieldset>
                 </form>
                 <div><a class="lienrecherche" href="#">Connectez-vous pour rechercher dans vos cinémas favoris</a></div>
-            </article>
-            <section class="lsimage">
-                <!-- parent 2 + 1 block |(sortie de la semain + toujours a l'affiche) + prochainement|-->
-                <div class="lsvertical">
-                    <!-- |sortie de la semaine + toujours a l'affiche|-->
-                    <div>
-                        <!-- Sortie de la semaine -->
+            </div>
+            <section class="lsimage"><!-- parent 2 + 1 block |(sortie de la semain + toujours a l'affiche) + prochainement|-->
+                <div class="lsvertical"><!-- |sortie de la semaine + toujours a l'affiche|-->
+                    <section><!-- Sortie de la semaine -->
                         <h3><a href="http://www.allocine.fr/film/sorties-semaine/">SORTIE DE LA SEMAINE</a></h3>
                         <div class="lsimage smallsection">
-                            <div id="cacheimage">
-                                <figure>
-                                    <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
-                                            alt="Sous le meme toi">
-                                        <figcaption>Sous le meme toi</figcaption>
-                                    </a>
-                                <p class="phauteur">Thriller</p>
-                                </figure>
-                                <div class="lsvertical">
-                                    <div><a class="salle" href="#">Séances</a></div>
-                                    <div><a class="salle" href="#">Bandes-annonce</a></div>
-                                </div>
-                            </div>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
+                            <figure>
+                                <a href="#"><img  class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
+                                    alt="Sous le meme toi">
+                                    Sous le meme toi
+                                </a>
+                                <figcaption class="phauteur">Thriller</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
                                     alt="life">
-                                <figcaption>Life</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
+                                    Life
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller </figcaption>                                
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
                                     alt="cesser">
-                                <figcaption>Cessez le feu</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
+                                    Cessez le feu
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller </figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
                                     alt="chiens">
-                                <figcaption>Mes vies de chiens</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
+                                    Mes vies de chiens                                    
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller </figcaption>
+                            </figure>
                         </div>
                         <a class="finsection" href="http://www.allocine.fr/film/sorties-semaine/">Toutes les sorties de la semaine</a>
-                    </div>
-                    <div class="bottomsection">
-                        <!-- Toujours à l'affiche -->
+                    </section>
+                    <section class="bottomsection"><!-- Toujours à l'affiche -->
                         <h3><a href="http://www.allocine.fr/film/sorties-semaine/">TOUJOURS A L'AFFICHE</a></h3>
                         <div class="lsimage smallsection">
-                            <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/03/03/17/27/305158.jpg"
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/03/03/17/27/305158.jpg"
                                     alt="fast">
-                                <figcaption>Fast and Furious 8</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/07/14/19/010723.jpg"
+                                    Fast and Furious 8                               
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller </figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/07/14/19/010723.jpg"
                                     alt="boul">
-                                <figcaption>Boul et Bill</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/17/03/01/17/45/314818.jpg"
+                                    Boul et Bill                                
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller </figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/17/03/01/17/45/314818.jpg"
                                     alt="ghost">
-                                <figcaption>Ghost in the Shell</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/10/15/19/165083.jpg"
+                                    Ghost in the Shell
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller </figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/10/15/19/165083.jpg"
                                     alt="">
-                                <figcaption>Sages Femmes</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
+                                    Sages Femmes                               
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller </figcaption>
+                            </figure>
                         </div>
                         <a class="finsection" href="http://www.allocine.fr/film/sorties-semaine/">Tous les films encore à l'affiche</a>
-                    </div>
+                    </section>
                 </div>
-                <div class="lsvertical">
-                    <!-- Prochainement -->
+                <section class="lsvertical"><!-- Prochainement -->
                     <h3><a href="http://www.allocine.fr/film/sorties-semaine/">PROCHAINEMENT</a></h3>
                     <div id="prochainement" class="lsvertical smallsection">
                         <p>Classement des films les plus consultés hier</p>
-                        <div>
+                        <figure>
                             <a class="lsimage" href="http://www.allocine.fr/film/fichefilm_gen_cfilm=189525.html">
-                                <div>
                                     <img id="imgpirate" class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/03/02/10/13/106609.jpg" alt="vengence">
-                                </div>
-                                <div>
-                                    Pirates des Caraïbes : La Vengeance de Salazar
-                                </div>
+                                Pirates des Caraïbes : La Vengeance de Salazar
                             </a>
-                        </div>
+                        </figure>
                         <div class="lsimage tabvertical">
                             <a href="#">Procès du siècle</a>
                             <a href="#">
-                                <div class="tabvideo" alt=></div>
+                                <div class="tabvideo"></div>
                             </a>
                         </div>
                         <div class="lsimage tabvertical">
                             <a href="#">Momie</a>
                             <a href="#">
-                                <div class="tabvideo" alt=></div>
+                                <div class="tabvideo"></div>
                             </a>
                         </div>
                         <div class="lsimage tabvertical">
                             <a href="#">Stars Wars - Les Derniers Jedi</a>
                             <a href="#">
-                                <div class="tabvideo" alt=></div>
+                                <div class="tabvideo"></div>
                             </a>
                         </div>
                         <div class="lsimage tabvertical">
                             <a href="#">Les Gardiens de la Galaxie 2</a>
                             <a href="#">
-                                <div class="tabvideo" alt=></div>
+                                <div class="tabvideo"></div>
                             </a>
                         </div>
                         <div class="lsimage tabvertical">
                             <a href="#">Thor : Ragnarok</a>
                             <a href="#">
-                                <div class="tabvideo" alt=></div>
+                                <div class="tabvideo"></div>
                             </a>
                         </div>
                         <div class="lsimage tabvertical">
                             <a href="#">Jour J</a>
                             <a href="#">
-                                <div class="tabvideo" alt=></div>
+                                <div class="tabvideo"></div>
                             </a>
                         </div>
                         <div class="lsimage tabvertical">
                             <a href="#">Valérian et la Cité des mille planètes</a>
                             <a href="#">
-                                <div class="tabvideo" alt=></div>
+                                <div class="tabvideo"></div>
                             </a>
                         </div>
                         <div class="lsimage tabvertical">
                             <a href="#">Baywatch - Alerte à Malibu</a>
                             <a href="#">
-                                <div class="tabvideo" alt=></div>
+                                <div class="tabvideo"></div>
                             </a>
                         </div>
                         <div class="lsimage tabvertical">
                             <a href="#">Alien: Covenant</a>
                             <a href="#">
-                                <div class="tabvideo" alt=></div>
+                                <div class="tabvideo"></div>
                             </a>
                         </div>
                         <a class="finsection" href="#">Tous les films à venir</a>
                     </div>
-                </div>
+                </section>
             </section>
-            <section class="bottomsection">
-                <!-- Bandes annonces a ne pas manquer -->
+            <section class="bottomsection"><!-- Bandes annonces a ne pas manquer -->
                 <h3><a href="#">BANDES ANNONCES A NE PAS MANQUER</a></h3>
                 <div class="lsimage">
                     <div class="smallsection lsvertical">
-                        <div>
-                            <a href="#"><img id="bdannonces" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/16/07/11/17/30/417359.jpg"
-                                    alt="img"></a>
-                        </div>
+                        <a href="#"><img id="bdannonces" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/16/07/11/17/30/417359.jpg"
+                            alt="img">
+                        </a>
                         <div class="lsimage lsrepartir bottomsection">
                             <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/02/08/15/54/313963.jpg"
                                     alt="img">
@@ -260,99 +256,94 @@
                 </div>
                 <a class="finsection" href="#">Toutes les bandes-annonces à ne pas manquer</a>
             </section>
-            <section class="bottomsection">
-                <!-- Derniers news cinema -->
+            <section class="bottomsection"><!-- Derniers news cinema -->
                 <h3><a href="#">DERNIÈRES NEW CINÉMA</a></h3>
                 <div id="imgnewcine" class="smallsection">
                     <div class="lsimage">
-                        <div class="widthtrois">
+                        <figure class="widthtrois">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
-                                    alt="ben">
-                                <figcaption>Mr. Bean bientôt de retour ?</figcaption>
+                                alt="ben">
+                                Mr. Bean bientôt de retour ?
                             </a>
-                            <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
-                            <p class="legendimg">mamamamamamam</p>
-                        </div>
-                        <div class="widthtrois">
+                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
+                            mamamamamamam</figcaption>
+                        </figure>
+                        <figure class="widthtrois">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="bande">
-                                <figcaption>Bande-annonce Kingsman 2 : quand le cowboy Channing Tatum vient prêter main forte...</figcaption>
+                                Bande-annonce Kingsman 2 : quand le cowboy Channing Tatum vient prêter main forte...
                             </a>
-                            <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
-                            <p class="legendimg">mamamamamamam</p>
-                        </div>
-                        <div class="widthtrois">
+                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
+                            mamamamamamam</figcaption>
+                        </figure>
+                        <figure class="widthtrois">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="">
-                                <figcaption>Avengers 4 : le titre du film Marvel a-t-il été révélé ?</figcaption>
+                                Avengers 4 : le titre du film Marvel a-t-il été révélé ?
                             </a>
-                            <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
-                            <p class="legendimg">mamamamamamam</p>
-                        </div>
+                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>mamamamamamam</figcaption>
+                        </figure>
                     </div>
                     <div class="lsimage">
-                        <div class="widthtrois">
+                        <figure class="widthtrois">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="braquage">
-                                <figcaption>Bande-annonce Braquage à l’ancienne : Morgan Freeman et Michael Caine, braqueurs de banque
+                                Bande-annonce Braquage à l’ancienne : Morgan Freeman et Michael Caine, braqueurs de banque
                                     pour Zach Braff Sponsorisé
-                                </figcaption>
                             </a>
-                            <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
-                            <p class="legendimg">mamamamamamam</p>
-                        </div>
-                        <div class="widthtrois">
+                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
+                            mamamamamamam</figcaption>
+                        </figure>
+                        <figure class="widthtrois">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="hier">
-                                <figcaption>Hier soir à la télé : vous avez aimé Ocean's Eleven ? On vous recommande...</figcaption>
+                                Hier soir à la télé : vous avez aimé Ocean's Eleven ? On vous recommande...
                             </a>
-                            <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
-                            <p class="legendimg">mamamamamamam</p>
-                        </div>
-                        <div class="widthtrois">
+                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
+                            mamamamamamam</figcaption>
+                        </figure>
+                        <figure class="widthtrois">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="jeeg">
-                                <figcaption>Jeeg Robot : un film de super-héros italien, réaliste et social [INTERVIEW]</figcaption>
+                                Jeeg Robot : un film de super-héros italien, réaliste et social [INTERVIEW]
                             </a>
-                            <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
-                            <p class="legendimg">mamamamamamam</p>
-                        </div>
+                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
+                            mamamamamamam</figcaption>
+                        </figure>
                     </div>
                     <div class="lsimage">
-                        <div class="widthtrois">
+                        <figure class="widthtrois">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="ocean">
-                                <figcaption>Ocean's Eleven sur France 3 : 5 choses à savoir sur le film de casse culte de Soderbergh</figcaption>
+                                Ocean's Eleven sur France 3 : 5 choses à savoir sur le film de casse culte de Soderbergh
                             </a>
-                            <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
-                            <p class="legendimg">mamamamamamam</p>
-                        </div>
-                        <div class="widthtrois">
+                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
+                            mamamamamamam</figcaption>
+                        </figure>
+                        <figure class="widthtrois">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="kristen">
-                                <figcaption>Kristen Stewart, Daniel Radcliffe... Que deviennent les enfants stars des années 2000 ?</figcaption>
+                                Kristen Stewart, Daniel Radcliffe... Que deviennent les enfants stars des années 2000 ?
                             </a>
-                            <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
-                            <p class="legendimg">mamamamamamam</p>
-                        </div>
-                        <div class="widthtrois">
+                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
+                            mamamamamamam</figcaption>
+                        </figure>
+                        <figure class="widthtrois">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="spider">
-                                <figcaption>Spider-Man bondit sur les photos d'Homecoming</figcaption>
+                                Spider-Man bondit sur les photos d'Homecoming
                             </a>
-                            <p class="legendimg legendimgjaune">NEWS - TOURNAGE</p>
-                            <p class="legendimg">mamamamamamam</p>
-                        </div>
+                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
+                            mamamamamamam</figcaption>
+                        </figure>
                     </div>
                 </div>
                 <a class="finsection" href="#">Toutes les news cinéma</a> - <a class="finsection" href="#">Tous les dossiers cinéma</a>
             </section>
         </main>
-        <main class="lsvertical paddingbody">
-            <!-- DEBUT SECTION SERIE -->
+        <main class="lsvertical paddingbody"><!-- DEBUT SECTION SERIE -->
             <h2><a href="http://www.allocine.fr/film/">SÉRIES</a></h2>
-            <nav>
-                <!-- menu serie -->
+            <nav><!-- menu serie -->
                 <div class="lshorizontal">
                     <a class="lsimage lscentre" href="#">
                         <p class="pdiez">#</p>Meilleures series</a>
@@ -365,68 +356,77 @@
                     <img class="plus" src="image/plus.png" alt="plus">
                 </div>
             </nav>
-            <section class="lsimage">
-                <!-- parent 2 + 1 block |(Top serie de la semaine + Les series les plus attendues) + L'actu series|-->
-                <div class="lsvertical">
-                    <!-- |Top serie de la semaine + Les series les plus attendues|-->
-                    <div>
-                        <!-- Top serie de la semaine -->
+            <section class="lsimage"><!-- parent 2 + 1 block |(Top serie de la semaine + Les series les plus attendues) + L'actu series|-->
+                <div class="lsvertical"><!-- |Top serie de la semaine + Les series les plus attendues|-->
+                    <section><!-- Top serie de la semaine -->
                         <h3><a href="http://www.allocine.fr/series/top/">Top séries de la semaine</a></h3>
                         <div class="lsimage smallsection">
-                            <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
-                                    alt="sous">
-                                <figcaption>Sous le meme toi</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
-                                    alt="life">
-                                <figcaption>Life</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
-                                    alt="cessez">
-                                <figcaption>Cessez le feu</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
-                                    alt="vies">
-                                <figcaption>Mes vies de chiens</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
+                                alt="sous">
+                                    Sous le meme toi                             
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
+                                alt="life">
+                                    Life                               
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
+                                alt="cessez">
+                                    Cessez le feu                               
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
+                                alt="vies">
+                                    Mes vies de chiens                               
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller</figcaption>
+                            </figure>
                         </div>
                         <a class="finsection" href="http://www.allocine.fr/series/top/">Toutes les series les plus consultés</a>
-                    </div>
-                    <div>
-                        <!-- Les series les plus attendues -->
+                    </section>
+                    <section><!-- Les series les plus attendues -->
                         <h3><a href="http://www.allocine.fr/series/top/">Les series les plus attendues</a></h3>
                         <div class="lsimage smallsection">
-                            <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
-                                    alt="meme">
-                                <figcaption>Sous le meme toi</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
+                                    alt="meme">Sous le meme toi</a>
+                                <figcaption class="phauteur"> Drame, Thriller</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
                                     alt="life">
-                                <figcaption>Life</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
+                                    Life                               
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
                                     alt="cessez le feu">
-                                <figcaption>Cessez le feu</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
-                            <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
+                                    Cessez le feu                                
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
                                     alt="chiens">
-                                <figcaption>Mes vies de chiens</figcaption>
-                                <p class="phauteur"> Drame, Thriller </p>
-                            </a>
+                                    Mes vies de chiens                            
+                                </a>
+                                <figcaption class="phauteur"> Drame, Thriller</figcaption>
+                            </figure>
                         </div>
                         <a class="finsection" href="http://www.allocine.fr/series/nouvelles/attendues/">Toutes les séries les plus attendues</a>
-                    </div>
+                    </section>
                 </div>
-                <div class="bottomsection">
-                    <!-- L'actu series -->
-                    <h3><a href="Toutes les séries les plus attendues">L'ACTU SERIES</a></h3>
+                <section class="bottomsection"><!-- L'actu series -->
+                    <h3><a href="#">L'ACTU SERIES</a></h3>
                     <div class="lsvertical smallsection">
                         <a class="tabserie" href="http://www.allocine.fr/film/fichefilm_gen_cfilm=189525.html"><img class="imglarge" src="http://fr.web.img3.acsta.net/newsv7/17/04/19/11/47/451137.jpg" alt="">                            Walking dead ohe ohe blalalalallalalal allalala alla lalala lala lal</a>
                         <div class="tabserie">
@@ -461,16 +461,13 @@
                         </div>
                         <a class="finsection" href="#">Tous les news serie</a>
                     </div>
-                </div>
+                </section>
             </section>
         </main>
-        <main class="bottomsection">
-            <!-- DEBUT SECTION EMISSION ALLOCINE -->
-            <div id="emission" class="paddingbody lsvertical">
-                <h2><a href="http://www.allocine.fr/film/">ÉMISSIONS ALLOCINÉ</a></h2>
-                <p id="soustitre" class="smallsection">Les dernières émissions proposées par la Rédac</p>
-                <nav class="bottomsection">
-                    <!-- menu emission allocine -->
+        <main id="emission" class="bottomsection paddingbody lsvertical"><!-- DEBUT SECTION EMISSION ALLOCINE -->
+            <h2><a href="http://www.allocine.fr/film/">ÉMISSIONS ALLOCINÉ</a></h2>
+            <p id="soustitre" class="smallsection">Les dernières émissions proposées par la Rédac</p>
+            <nav class="bottomsection"><!-- menu emission allocine -->
                     <div class="lshorizontal">
                         <a class="lsimage lscentre" href="#">
                             <p class="pdiez">#</p>Fanzone</a>
@@ -482,38 +479,42 @@
                             <p class="pdiez">#</p>Top 5</a>
                         <a class="lsimage lscentre" href="#">
                             <p class="pdiez">#</p>Allocine serie</a>
-                        <img class="plus" src="image/plus.png" alt="">
+                        <img class="plus" src="image/plus.png" alt="plus">
                     </div>
-                </nav>
-                <section>
-                    <a href="#"><img id="bigimgemission" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/03/06/15/19/363909.jpg"
-                            alt="img"></a>
-                    <div class="lsimage">
-                        <a href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
-                                alt="legende">
-                            <figcaption>Légende associée</figcaption>
+            </nav>
+            <section>
+                <figure>
+                        <a href="#">
+                            <img id="bigimgemission" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/03/06/15/19/363909.jpg"
+                                alt="img">
                         </a>
-                        <a href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
+                </figure>
+                <div class="lsimage">
+                        <figure>
+                            <a href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                 alt="legende">
-                            <figcaption>Légende associée</figcaption>
-                        </a>
-                        <a href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
+                                Légende associée
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                 alt="legende">
-                            <figcaption>Légende associée</figcaption>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <!-- video des emisssions -->
-                </section>
-            </div>
+                                Légende associée
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
+                                alt="legende">
+                                Légende associée
+                            </a>
+                        </figure>
+                </div>
+            </section>
         </main>
-        <main class="lsvertical paddingbody">
-            <!-- DEBUT SECTION SE DIVERTIR A LA MAISON -->
+        <main class="lsvertical paddingbody"><!-- DEBUT SECTION SE DIVERTIR A LA MAISON -->
             <h2>SE DIVERTIR A LA MAISON</h2>
             <section class="lsimage" id="repartir">
-                <section class="widthtrois lsvertical">
-                    <!-- Ce soir a la tele -->
+                <section class="widthtrois lsvertical"><!-- Ce soir a la tele -->
                     <div>
                         <h4><a href="#">CE SOIR À LA TÉLÉ</a></h4>
                         <a href=""><img src="image/homme.png" alt="tele">
@@ -525,16 +526,14 @@
                     </div>
                     <a class="finsection" href="">Voir le programme TV de ce soir</a>
                 </section>
-                <section class="widthtrois lsvertical">
-                    <!-- Films en VOD -->
+                <section class="widthtrois lsvertical"><!-- Films en VOD -->
                     <h4><a href="#">FILMS EN VOD</a></h4>
                     <a href="#">Nouveaux films en VOD</a>
                     <a href="#">Meilleurs films en VOD</a>
                     <a href="#">Tous les films en VOD</a>
                     <a class="finsection" href="#">Voir tous les films en VOD</a>
                 </section>
-                <section class="widthtrois lsvertical">
-                    <!-- Sortie DVD bluray -->
+                <section class="widthtrois lsvertical"><!-- Sortie DVD bluray -->
                     <h4><a href="#">SORTIE EN DVD/BLURAY</a></h4>
                     <a href="#">Nouveaux films en DVD/BLURAY</a>
                     <a href="#">Meilleurs films en DVD/BLURAY</a>
@@ -543,11 +542,9 @@
                 </section>
             </section>
         </main>
-        <main class="lsvertical paddingbody">
-            <!-- DEBUT SECTION STARS -->
+        <main class="lsvertical paddingbody"><!-- DEBUT SECTION STARS -->
             <h2><a href="http://www.allocine.fr/film/">STARS</a></h2>
-            <nav class="bottomsection">
-                <!-- menu stars -->
+            <nav class="bottomsection"><!-- menu stars -->
                 <div class="lshorizontal">
                     <a class="lsimage lscentre" href="#">
                         <p class="pdiez">#</p>Interview</a>
@@ -558,39 +555,47 @@
                     <img class="plus" src="image/plus.png" alt="plus">
                 </div>
             </nav>
-            <section class="bottomsection">
-                <!-- les differentes stars -->
-                <div class="lsimage bottomsection">
-                    <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
+            <div class="lsimage bottomsection">
+                    <figure>
+                        <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
                             alt="meme">
-                        <figcaption>Sous le meme toi</figcaption>
-                    </a>
-                    <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
+                            Sous le meme toi
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
                             alt="life">
-                        <figcaption>Life</figcaption>
-                    </a>
-                    <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
+                            Life    
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
                             alt="feu">
-                        <figcaption>Cessez le feu</figcaption>
-                    </a>
-                    <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
+                            Cessez le feu   
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
                             alt="chiens">
-                        <figcaption>Mes vies de chiens</figcaption>
-                    </a>
-                    <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
+                            Mes vies de chiens  
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
                             alt="feu">
-                        <figcaption>Cessez le feu</figcaption>
-                    </a>
-                    <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
+                            Cessez le feu   
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
                             alt="chiens">
-                        <figcaption>Mes vies de chiens</figcaption>
-                    </a>
-                </div>
-                <a class="finsection" href="#">Top stars complet</a>
-            </section>
+                            Mes vies de chiens
+                        </a>
+                    </figure>
+            </div>
+            <a class="finsection" href="#">Top stars complet</a>    
         </main>
-        <nav class="lsvertical bottomsection">
-            <!-- menu et liens vers d'autre site' -->
+        <nav class="lsvertical bottomsection"><!-- menu et liens vers d'autre site' -->
             <div class="liensweb">
                 <a href="#">Musique de films</a>
                 <a href="#">Musique de séries TV</a>
@@ -607,11 +612,9 @@
                 <a href="#">La Box Geek</a>
             </div>
         </nav>
-        <main class="lsvertical">
-            <!-- SORTIE FILM A L'APPROCHE -->
+        <main class="lsvertical">            <!-- SORTIE FILM A L'APPROCHE -->
             <h2><a href="http://www.allocine.fr/film/">CA SORT</a></h2>
-            <aside>
-                <!-- video du film a l'approche -->
+            <aside>                <!-- video du film a l'approche -->
                 <iframe width="100%" height="580" src="https://www.youtube.com/embed/b7JhXQe1JHQ" frameborder="0" allowfullscreen></iframe>
             </aside>
         </main>
