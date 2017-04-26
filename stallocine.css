@@ -1,8 +1,10 @@
-body{
+#mainborder{
     background-color: #FFFFFF;
     margin-right:10%;
     margin-left:10%;
-    margin-top:0;
+}
+body{
+    margin:0;
 }
 .paddingbody{
     padding-left: 2%;
@@ -53,12 +55,21 @@ html{
     justify-content:space-around;
     align-items: center;
 }
+.lsjsflexend{
+    justify-content: flex-end;
+}
 .smallsection{ /* espace entre h3 et section */
     margin-top: -1.1rem;
 }
 .widthtrois{
     width:33.333333%
 }
+.widthtroiscinq{
+    width:40%
+}
+.textalign{
+    text-align:auto;
+}  
 /*police***********************************************************************/
 h2{
     margin: auto;
@@ -73,6 +84,11 @@ h3{
 }
 h4{
     font-size: 1.6rem;
+}
+h6{
+    color: #E6E6E6;
+    font-size:0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 p{
     color:#B3B3C1;
@@ -241,7 +257,7 @@ header nav a:hover{
     height:8rem;
 }
 .imglarge{ /* image actu serie */
-    width:19.8rem;
+    width:19.3rem;
     height: 8rem;
 }
 .imglarge:hover{
@@ -271,7 +287,7 @@ header nav a:hover{
 }
 .salle{ /* lien sous les images */
     display:none;
-        height: 3rem;
+    margin-top: 3rem;
 
 }
 #cacheimage:hover .salle{
@@ -327,10 +343,10 @@ header nav a:hover{
 }
 .imgemission{
     height: 4rem;
-    width: 2rem;
+    width: 33,333%;
 }
 #bigimgemission{
-    flex: 1;
+    width: 100%;
 }
 /*SE DIVERTIR A LA MAISON*/
 #articles{
