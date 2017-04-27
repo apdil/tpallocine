@@ -44,6 +44,9 @@ figure{
 .lscentre{ /* pour menu sous h2 */
     align-items: center;
 }
+.lscenter{
+    align-items: center;
+}
 #repartir{ /*répaartir*/
     display: flex;
     justify-content:space-around;
@@ -158,6 +161,11 @@ a:hover{
     padding-top: 0.2rem;
 }
 /*********************************************************************************HEADER*/
+#headerfixed{
+    position:fixed;
+    width:100%;
+    box-shadow: 8px 0px 2px grey;
+}
 header{
     background-color: #FECC00;
     justify-content: flex-start;
@@ -201,7 +209,7 @@ header nav a:hover{
     font-size: 0.8rem;
     font-weight: 400;
 }
-#home{ /*bouton home*/
+.home{ /*bouton home*/
     padding: 0.55rem 0.65rem 0.8rem 0.65rem;
     background-color: white;
     margin-right: 0.5em;
