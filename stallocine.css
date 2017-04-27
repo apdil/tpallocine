@@ -3,6 +3,9 @@
     margin-right:10%;
     margin-left:10%;
 }
+fieldset{
+    border:none;
+}
 body{
     margin:0;
 }
@@ -19,9 +22,6 @@ html{
     color:#FECC00;
     font-weight: 700;
 }
-.bottomsection{
-    margin-bottom: 3rem;
-}
 figure{
     margin:0;
 }
@@ -29,7 +29,7 @@ figure{
 
 .lshorizontal{ /*liste menu a l'horizontale || aussi la bordure*/
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     border-top: 0.1rem solid #F0F0F0;
     border-bottom: 0.1rem solid #F0F0F0;
@@ -44,8 +44,14 @@ figure{
 .lscentre{ /* pour menu sous h2 */
     align-items: center;
 }
+.lsimage.lscentre{
+    margin-left: 2rem;
+}
 .lscenter{
     align-items: center;
+}
+.alignself{
+    align-content: flex-end;
 }
 #repartir{ /*répaartir*/
     display: flex;
@@ -87,6 +93,9 @@ h2{
     padding-top: 0.8rem;
     border-top: 5px solid #FECC00;
 }
+.titletop{
+    margin-top:3rem;
+}
 h3{
     font-size: 1.7rem;
 }
@@ -114,9 +123,18 @@ figcaption{
 .phauteur{ /* sous les images avec legende */
     margin-top: 0.1rem;
 }
-.finsection{ /* a(lien) fin de section*/
+.finsection { /* a(lien) fin de section*/
     color:#005EA8;
     font-size: 0.9rem;
+}
+.endmargin{
+    margin-top: 1rem;
+}
+.menupadding{
+    padding-top: 1.5rem;
+}
+#cotegauche{
+    margin-left: 6rem;
 }
 a{
     text-decoration: none;
@@ -129,7 +147,9 @@ a:hover{
     color:#1ca2eb;
 }
 /************************/
-
+.longueur{
+    margin-bottom:4rem;
+}
 .imgsize{
     height:11.5rem;
     width:9rem;
@@ -144,8 +164,7 @@ a:hover{
 }
 .legendimg{ /* legende jaune et gris en column */
     font-size: 0.6rem;
-    margin-top: -3.6rem;
-    margin-bottom: 4rem;
+
     font-family: Arial, Helvetica, sans-serif;
 }
 .legendimgjaune{ /* legende cible jaune */
@@ -160,11 +179,25 @@ a:hover{
     margin-top: 3rem;
     padding-top: 0.2rem;
 }
+.fignews{
+    margin-bottom: 2rem;
+}
+.textleft{
+    margin-left:0.2rem;
+}
+#bordertop{
+    border-top: 0.1rem solid #F0F0F0;
+}
 /*********************************************************************************HEADER*/
 #headerfixed{
     position:fixed;
     width:100%;
     box-shadow: 8px 0px 2px grey;
+    padding: 0 0 0 0;
+}
+#embleme{
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 header{
     background-color: #FECC00;
@@ -192,7 +225,7 @@ header nav{
     margin-bottom: -0.3rem;
 }
 header a{
-    margin-right: 1.2rem;
+    margin-right: 1.4rem;
 }
 header form p{
     background-color: #FECC00;
@@ -212,7 +245,11 @@ header nav a:hover{
 .home{ /*bouton home*/
     padding: 0.55rem 0.65rem 0.8rem 0.65rem;
     background-color: white;
-    margin-right: 0.5em;
+    margin-right: 0.8em;
+}
+#homefixed{
+    padding-top: 0.9rem;
+    padding-bottom: 1.2rem;
 }
 #monallocine{
     font-size: 0.8rem;
@@ -351,12 +388,22 @@ header nav a:hover{
     font-size: 1rem;
     color:#FFFFFF;
 }
+#soustitregris{
+    color: #B3B3B3;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
 .imgemission{
-    height: 4rem;
-    width: 33,333%;
+    width:33%;
+    background-size: cover;
 }
 #bigimgemission{
     width: 100%;
+}
+#divertir{
+    font-family: montserratSemiBold,Arial,Sans-Serif;
+    font-size:2.5rem;
 }
 /*SE DIVERTIR A LA MAISON*/
 #articles{

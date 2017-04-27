@@ -12,8 +12,8 @@
 <body>
     <header id="headerfixed" class="lscenter">
         <nav class="lscentre">
-            <img src="image/allocinelogo.png" alt="logo">
-            <img class="home" src="image/home.png" alt="home">
+            <img id="embleme" src="image/allocinelogo.png" alt="logo">
+            <img id="homefixed" class="home" src="image/home.png" alt="home">
             <a href="http://www.allocine.fr/film/">CINÉMA</a>
             <a href="http://www.allocine.fr/series/">SÉRIES</a>
             <a href="http://www.allocine.fr/video/">ÉMISSIONS</a>
@@ -78,7 +78,7 @@
         <section id="articles">
             <!-- AFFICHE (articles) defillements -->
             <div>
-                <h2>defillement des articles</h2>
+                <h6>defillement des articles</h6>
             </div>
         </section>
         <main id="cinema" class="lsvertical paddingbody"><!-- DEBUT SECTION CINEMA -->
@@ -95,7 +95,9 @@
                         <p class="pdiez">#</p>Actus cinés</a>
                     <a class="lsimage lscentre" href="http://www.allocine.fr/film/meilleurs/">
                         <p class="pdiez">#</p>Meilleures films</a>
-                    <a class="lsimage lscentre" href=#><img src="image/plus.png" alt="plus"></a>
+                    <div class="alignself">
+                        <a class="lsimage lscentre" href=#><img src="image/plus.png" alt="plus"></a>
+                    </div>
                 </div>
             </nav>
             <div id="search" class="lsrepartir"><!-- barre de recherche -->
@@ -114,34 +116,28 @@
                         <div class="lsimage smallsection">
                             <figure>
                                 <a href="#"><img  class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
-                                    alt="Sous le meme toi">
-                                    Sous le meme toi
-                                </a>
-                                <figcaption class="phauteur">Thriller</figcaption>
+                                    alt="Sous le meme toi">Sous le meme toi</a>
+                                <figcaption class="phauteur"> Drame, Thriller</figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
-                                    alt="life">
-                                    Life
-                                </a>
+                                    alt="life">Life</a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>                                
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
-                                    alt="cesser">
-                                    Cessez le feu
-                                </a>
+                                    alt="cesser">Cessez le feu</a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
-                                    alt="chiens">
-                                    Mes vies de chiens                                    
-                                </a>
+                                    alt="chiens">Mes vies de chiens</a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>
                             </figure>
                         </div>
-                        <a class="finsection" href="http://www.allocine.fr/film/sorties-semaine/">Toutes les sorties de la semaine</a>
+                        <div class="endmargin">
+                            <a class="finsection" href="http://www.allocine.fr/film/sorties-semaine/">Toutes les sorties de la semaine</a>
+                        </div>
                     </section>
                     <section class="bottomsection"><!-- Toujours à l'affiche -->
                         <h3><a href="http://www.allocine.fr/film/sorties-semaine/">TOUJOURS A L'AFFICHE</a></h3>
@@ -175,7 +171,9 @@
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>
                             </figure>
                         </div>
-                        <a class="finsection" href="http://www.allocine.fr/film/sorties-semaine/">Tous les films encore à l'affiche</a>
+                        <div class="endmargin">
+                            <a class="finsection" href="http://www.allocine.fr/film/sorties-semaine/">Tous les films encore à l'affiche</a>
+                        </div>
                     </section>
                 </div>
                 <section class="lsvertical"><!-- Prochainement -->
@@ -242,7 +240,7 @@
                                 <div class="tabvideo"></div>
                             </a>
                         </div>
-                        <a class="finsection" href="#">Tous les films à venir</a>
+                        <a class="finsection endmargin" href="#">Tous les films à venir</a>
                     </div>
                 </section>
             </section>
@@ -272,94 +270,98 @@
                         pub
                     </div>
                 </div>
-                <a class="finsection" href="#">Toutes les bandes-annonces à ne pas manquer</a>
+                <div class="endmargin">
+                    <a class="finsection" href="#">Toutes les bandes-annonces à ne pas manquer</a>
+                </div>
             </section>
             <section class="bottomsection"><!-- Derniers news cinema -->
                 <h3><a href="#">DERNIÈRES NEW CINÉMA</a></h3>
-                <div id="imgnewcine" class="smallsection">
+                <div id="" class="smallsection">
                     <div class="lsimage">
-                        <figure class="widthtrois">
+                        <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                 alt="ben">
                                 Mr. Bean bientôt de retour ?
                             </a>
-                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
-                            mamamamamamam</figcaption>
+                            <figcaption class="legendimg"><span class=" legendimgjaune">NEWS - TOURNAGE</span><br>
+                            jeudi 27 avril</figcaption>
                         </figure>
-                        <figure class="widthtrois">
+                        <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="bande">
                                 Bande-annonce Kingsman 2 : quand le cowboy Channing Tatum vient prêter main forte...
                             </a>
-                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
-                            mamamamamamam</figcaption>
+                            <figcaption class="legendimg"><span class=" legendimgjaune">NEWS - TOURNAGE</span><br>
+                            jeudi 27 avril</figcaption>
                         </figure>
-                        <figure class="widthtrois">
+                        <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="">
                                 Avengers 4 : le titre du film Marvel a-t-il été révélé ?
                             </a>
-                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>mamamamamamam</figcaption>
+                            <figcaption class="legendimg"><span class=" legendimgjaune">NEWS - TOURNAGE</span><br>jeudi 27 avril</figcaption>
                         </figure>
                     </div>
                     <div class="lsimage">
-                        <figure class="widthtrois">
+                        <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="braquage">
                                 Bande-annonce Braquage à l’ancienne : Morgan Freeman et Michael Caine, braqueurs de banque
                                     pour Zach Braff Sponsorisé
                             </a>
-                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
-                            mamamamamamam</figcaption>
+                            <figcaption class="legendimg"><span class=" legendimgjaune">NEWS - TOURNAGE</span><br>
+                            jeudi 27 avril</figcaption>
                         </figure>
-                        <figure class="widthtrois">
+                        <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="hier">
                                 Hier soir à la télé : vous avez aimé Ocean's Eleven ? On vous recommande...
                             </a>
-                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
-                            mamamamamamam</figcaption>
+                            <figcaption class="legendimg"><span class=" legendimgjaune">NEWS - TOURNAGE</span><br>
+                            jeudi 27 avril</figcaption>
                         </figure>
-                        <figure class="widthtrois">
+                        <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="jeeg">
                                 Jeeg Robot : un film de super-héros italien, réaliste et social [INTERVIEW]
                             </a>
-                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
-                            mamamamamamam</figcaption>
+                            <figcaption class="legendimg"><span class=" legendimgjaune">NEWS - TOURNAGE</span><br>
+                            jeudi 27 avril</figcaption>
                         </figure>
                     </div>
                     <div class="lsimage">
-                        <figure class="widthtrois">
+                        <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="ocean">
                                 Ocean's Eleven sur France 3 : 5 choses à savoir sur le film de casse culte de Soderbergh
                             </a>
-                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
-                            mamamamamamam</figcaption>
+                            <figcaption class="legendimg"><span class=" legendimgjaune">NEWS - TOURNAGE</span><br>
+                            jeudi 27 avril</figcaption>
                         </figure>
-                        <figure class="widthtrois">
+                        <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="kristen">
                                 Kristen Stewart, Daniel Radcliffe... Que deviennent les enfants stars des années 2000 ?
                             </a>
-                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
-                            mamamamamamam</figcaption>
+                            <figcaption class="legendimg"><span class=" legendimgjaune">NEWS - TOURNAGE</span><br>
+                            jeudi 27 avril</figcaption>
                         </figure>
-                        <figure class="widthtrois">
+                        <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                     alt="spider">
                                 Spider-Man bondit sur les photos d'Homecoming
                             </a>
-                            <figcaption class="legendimg legendimgjaune">NEWS - TOURNAGE<br>
-                            mamamamamamam</figcaption>
+                            <figcaption class="legendimg"><span class=" legendimgjaune">NEWS - TOURNAGE</span><br>
+                            jeudi 27 avril</figcaption>
                         </figure>
                     </div>
                 </div>
-                <a class="finsection" href="#">Toutes les news cinéma</a> - <a class="finsection" href="#">Tous les dossiers cinéma</a>
+                <div>
+                    <a class="finsection" href="#">Toutes les news cinéma</a> - <a class="finsection" href="#">Tous les dossiers cinéma</a>
+                </div>
             </section>
         </main>
-        <main class="lsvertical paddingbody"><!-- DEBUT SECTION SERIE -->
+        <main class="lsvertical paddingbody titletop"><!-- DEBUT SECTION SERIE -->
             <h2><a href="http://www.allocine.fr/film/">SÉRIES</a></h2>
             <nav><!-- menu serie -->
                 <div class="lshorizontal">
@@ -377,41 +379,35 @@
             <section class="lsimage"><!-- parent 2 + 1 block |(Top serie de la semaine + Les series les plus attendues) + L'actu series|-->
                 <div class="lsvertical"><!-- |Top serie de la semaine + Les series les plus attendues|-->
                     <section><!-- Top serie de la semaine -->
-                        <h3><a href="http://www.allocine.fr/series/top/">Top séries de la semaine</a></h3>
+                        <h3><a href="http://www.allocine.fr/series/top/">TOP SÉRIE DE LA SEMAINE</a></h3>
                         <div class="lsimage smallsection">
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
-                                alt="sous">
-                                    Sous le meme toi                             
-                                </a>
+                                alt="sous">Sous le meme toi</a>
                                 <figcaption class="phauteur"> Drame, Thriller</figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
-                                alt="life">
-                                    Life                               
-                                </a>
+                                alt="life">Life</a>
                                 <figcaption class="phauteur"> Drame, Thriller</figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
-                                alt="cessez">
-                                    Cessez le feu                               
-                                </a>
+                                alt="cessez">Cessez le feu</a>
                                 <figcaption class="phauteur"> Drame, Thriller</figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
-                                alt="vies">
-                                    Mes vies de chiens                               
-                                </a>
+                                alt="vies">Mes vies de chiens</a>
                                 <figcaption class="phauteur"> Drame, Thriller</figcaption>
                             </figure>
                         </div>
-                        <a class="finsection" href="http://www.allocine.fr/series/top/">Toutes les series les plus consultés</a>
+                        <div class="endmargin">   
+                            <a class="finsection" href="http://www.allocine.fr/series/top/">Toutes les series les plus consultés</a>
+                        </div>
                     </section>
                     <section><!-- Les series les plus attendues -->
-                        <h3><a href="http://www.allocine.fr/series/top/">Les series les plus attendues</a></h3>
+                        <h3><a href="http://www.allocine.fr/series/top/">LES SERIES LES PLUS ATTENDUES</a></h3>
                         <div class="lsimage smallsection">
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
@@ -440,7 +436,9 @@
                                 <figcaption class="phauteur"> Drame, Thriller</figcaption>
                             </figure>
                         </div>
-                        <a class="finsection" href="http://www.allocine.fr/series/nouvelles/attendues/">Toutes les séries les plus attendues</a>
+                        <div class="endmargin">
+                            <a class="finsection" href="http://www.allocine.fr/series/nouvelles/attendues/">Toutes les séries les plus attendues</a>
+                        </div>
                     </section>
                 </div>
                 <section class="bottomsection"><!-- L'actu series -->
@@ -477,12 +475,14 @@
                             <p class="legendimgsize">Date</p>
                             <a href="#">Riverdale : 5 choses que vous ignoriez peut-être sur K.J. Apa, l'interprète d'Archie !</a>
                         </div>
-                        <a class="finsection" href="#">Tous les news serie</a>
+                        <div class="endmargin">
+                            <a class="finsection" href="#">Tous les news serie</a>
+                        </div>
                     </div>
                 </section>
             </section>
         </main>
-        <main id="emission" class="bottomsection paddingbody lsvertical"><!-- DEBUT SECTION EMISSION ALLOCINE -->
+        <main id="emission" class="bottomsection paddingbody lsvertical titletop"><!-- DEBUT SECTION EMISSION ALLOCINE -->
             <h2><a href="http://www.allocine.fr/film/">ÉMISSIONS ALLOCINÉ</a></h2>
             <p id="soustitre" class="smallsection">Les dernières émissions proposées par la Rédac</p>
             <nav class="bottomsection"><!-- menu emission allocine -->
@@ -497,7 +497,7 @@
                             <p class="pdiez">#</p>Top 5</a>
                         <a class="lsimage lscentre" href="#">
                             <p class="pdiez">#</p>Allocine serie</a>
-                        <img class="plus" src="image/plus.png" alt="plus">
+                        <img class="plus" src="image/plusnoire.png" alt="plus">
                     </div>
             </nav>
             <section>
@@ -509,19 +509,19 @@
                 </figure>
                 <div class="lsimage">
                         <figure>
-                            <a href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
+                            <a class="lsvertical" href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                 alt="legende">
                                 Légende associée
                             </a>
                         </figure>
                         <figure>
-                            <a href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
+                            <a class="lsvertical" href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                 alt="legende">
                                 Légende associée
                             </a>
                         </figure>
                         <figure>
-                            <a href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
+                            <a class="lsvertical" href="#"><img class="imgemission" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
                                 alt="legende">
                                 Légende associée
                             </a>
@@ -529,8 +529,8 @@
                 </div>
             </section>
         </main>
-        <main class="lsvertical paddingbody"><!-- DEBUT SECTION SE DIVERTIR A LA MAISON -->
-            <h2>SE DIVERTIR A LA MAISON</h2>
+        <main class="lsvertical paddingbody titletop"><!-- DEBUT SECTION SE DIVERTIR A LA MAISON -->
+            <h2 id="divertir">SE DIVERTIR A LA MAISON</h2>
             <section class="lsimage" id="repartir">
                 <section class="widthtrois lsvertical"><!-- Ce soir a la tele -->
                     <div>
@@ -542,35 +542,42 @@
                         <a href=""><img src="image/esprit.png" alt="tele">
                         </a>
                     </div>
-                    <a class="finsection" href="">Voir le programme TV de ce soir</a>
+                    <div class="endmargin">
+                        <a class="finsection" href="">Voir le programme TV de ce soir</a>
+                    </div>
                 </section>
                 <section class="widthtrois lsvertical"><!-- Films en VOD -->
                     <h4><a href="#">FILMS EN VOD</a></h4>
                     <a href="#">Nouveaux films en VOD</a>
                     <a href="#">Meilleurs films en VOD</a>
                     <a href="#">Tous les films en VOD</a>
-                    <a class="finsection" href="#">Voir tous les films en VOD</a>
+                    <div class="endmargin">
+                        <a class="finsection" href="#">Voir tous les films en VOD</a>
+                    </div>
                 </section>
                 <section class="widthtrois lsvertical"><!-- Sortie DVD bluray -->
                     <h4><a href="#">SORTIE EN DVD/BLURAY</a></h4>
                     <a href="#">Nouveaux films en DVD/BLURAY</a>
                     <a href="#">Meilleurs films en DVD/BLURAY</a>
                     <a href="#">Tous les films en DVD/BLURAY</a>
-                    <a class="finsection" href="#">Voir tous les films en DVD/BLU-RAY</a>
+                    <div>
+                        <a class="finsection" href="#">Voir tous les films en DVD/BLU-RAY</a>
+                    </div>
                 </section>
             </section>
         </main>
-        <main class="lsvertical paddingbody"><!-- DEBUT SECTION STARS -->
+        <main class="lsvertical paddingbody titletop"><!-- DEBUT SECTION STARS -->
             <h2><a href="http://www.allocine.fr/film/">STARS</a></h2>
-            <nav class="bottomsection"><!-- menu stars -->
+            <p id="soustitregris" class="smallsection">Top stars du jours Allociné</p>
+            <nav class="bottomsection longueur"><!-- menu stars -->
                 <div class="lshorizontal">
-                    <a class="lsimage lscentre" href="#">
+                    <a id="cotegauche" class="lsimage lscentre marginleft" href="#">
                         <p class="pdiez">#</p>Interview</a>
                     <a class="lsimage lscentre" href="#">
                         <p class="pdiez">#</p>Anniversaires</a>
                     <a class="lsimage lscentre" href="#">
                         <p class="pdiez">#</p>Toutes les stars</a>
-                    <img class="plus" src="image/plus.png" alt="plus">
+                    <img src="image/plus.png" alt="plus">
                 </div>
             </nav>
             <div class="lsimage bottomsection">
@@ -611,26 +618,28 @@
                         </a>
                     </figure>
             </div>
-            <a class="finsection" href="#">Top stars complet</a>    
-        </main>
-        <nav class="lsvertical bottomsection"><!-- menu et liens vers d'autre site' -->
-            <div class="liensweb">
-                <a href="#">Musique de films</a>
-                <a href="#">Musique de séries TV</a>
-                <a href="#">Dernières séries TV en VOD</a>
-                <a href="#">News jeux vidéo</a>
+            <div class="endmargin longueur">
+                <a class="finsection" href="#">Top stars complet</a>    
             </div>
+        </main>
+        <nav id="bordertop" class="lsvertical bottomsection menupadding"><!-- menu et liens vers d'autre site' -->
             <div class="liensweb">
-                <a href="#">Filmstarts</a>
-                <a href="#">Beyazperde</a>
-                <a href="#">Sensacine</a>
-                <a href="#">Adorocinema</a>
-                <a href="#">LeBonGuide</a>
-                <a href="#">Le comparateur de vol easyvoyage</a>
-                <a href="#">La Box Geek</a>
+                <a class="navsmall" href="#">Musique de films |</a>
+                <a class="navsmall textleft" href="#">Musique de séries TV |</a>
+                <a class="navsmall textleft" href="#">Dernières séries TV en VOD |</a>
+                <a class="navsmall textleft" href="#">News jeux vidéo</a>
+            </div>
+            <div class="liensweb endmargin">
+                <a class="navsmall" href="#">Filmstarts |</a>
+                <a class="navsmall textleft" href="#">Beyazperde |</a>
+                <a class="navsmall textleft" href="#">Sensacine |</a>
+                <a class="navsmall textleft" href="#">Adorocinema |</a>
+                <a class="navsmall textleft" href="#">LeBonGuide |</a>
+                <a class="navsmall textleft" href="#">Le comparateur de vol easyvoyage |</a>
+                <a class="navsmall textleft" href="#">La Box Geek</a>
             </div>
         </nav>
-        <main class="lsvertical"><!-- SORTIE FILM A L'APPROCHE -->
+        <main class="lsvertical titletop"><!-- SORTIE FILM A L'APPROCHE -->
             <h2><a href="http://www.allocine.fr/film/">CA SORT</a></h2>
             <aside>                <!-- video du film a l'approche -->
                 <iframe width="100%" height="580" src="https://www.youtube.com/embed/b7JhXQe1JHQ" frameborder="0" allowfullscreen></iframe>
