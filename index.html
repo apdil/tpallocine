@@ -39,7 +39,7 @@
                 </div>
                 <form action="ppp">
                     <p>
-                        <input id="textheader" type="text" name="header"><label for="textheader"></label>
+                        <input id="textheader" type="text" name="header" placeholder="Rechercher un film, une serie, une star..."><label for="textheader"></label>
                         <input id="submitheader" type="submit" name="push" value="Rechercher"><label for="submitheader"></label>
                     </p>
                     <p id="commentaire" class="smallsection">balbablablab</p>
@@ -75,10 +75,52 @@
                     les dernières bandes-annonces et plus encore...</p>
             </div>
         </header>
-        <section id="articles">
-            <!-- AFFICHE (articles) defillements -->
-            <div>
-                <h6>defillement des articles</h6>
+        <section id="slideshow"><!-- AFFICHE (articles) defillements -->
+            <div id="s1">
+                <div id="s2">
+                    <div id="s3">
+                        <div id="s4">
+                            <div id="s5">
+                                <div id="s6">
+                                    <div id="s7">
+                                        <div id="s8">
+                                            <div id="s9">
+                                                <div id="s10">
+                                                    <ul id="liste" class="lsimage"> 
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img1.png"
+                                                            alt="Sous le meme toi"></a></li>
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img2.png"
+                                                            alt="life"></a></li>
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img3.png"
+                                                            alt="cesser"></a></li>
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img4.png"
+                                                            alt="chiens"></a></li>
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img5.png"
+                                                            alt="Sous le meme toi"></a></li>
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img6.png"
+                                                            alt="life"></a></li>
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img7.png"
+                                                            alt="cesser"></a></li>
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img8.png"
+                                                            alt="chiens"></a></li>
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img9.png"
+                                                            alt="cesser"></a></li>
+                                                        <li><a href="#"><img class="heightslide defillementimg" src="image/img10.png"
+                                                            alt="chiens"></a></li>
+                                                    </ul>
+                                                    <a id="next" href="#slideshow">next
+                                                    </a>
+                                                    <a id="prev" href="#liste">prev
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <main id="cinema" class="lsvertical paddingbody"><!-- DEBUT SECTION CINEMA -->
@@ -103,35 +145,35 @@
             <div id="search" class="lsrepartir"><!-- barre de recherche -->
                 <form action="recherche">
                     <fieldset>
-                        <input id="textcinema" type="text" name="recherche"><label for="textcinema"></label>
+                        <input id="textcinema" type="text" name="recherche" placeholder="Rechercher une salle : Nice, Bastille, 75001, UGC Lyon ..."><label for="textcinema"></label>
                         <input id="submitcinema" type="submit" name="recherch" value="Rechercher"><label for="submitcinema"></label>
                     </fieldset>
                 </form>
                 <div><a class="lienrecherche" href="#">Connectez-vous pour rechercher dans vos cinémas favoris</a></div>
             </div>
-            <section class="lsimage"><!-- parent 2 + 1 block |(sortie de la semain + toujours a l'affiche) + prochainement|-->
+            <section class="lsimage endmargin"><!-- parent 2 + 1 block |(sortie de la semain + toujours a l'affiche) + prochainement|-->
                 <div class="lsvertical"><!-- |sortie de la semaine + toujours a l'affiche|-->
                     <section><!-- Sortie de la semaine -->
                         <h3><a href="http://www.allocine.fr/film/sorties-semaine/">SORTIE DE LA SEMAINE</a></h3>
                         <div class="lsimage smallsection">
                             <figure>
                                 <a href="#"><img  class="imgsize" src="http://fr.web.img2.acsta.net/r_1920_1080/pictures/17/01/13/09/10/401138.jpg"
-                                    alt="Sous le meme toi">Sous le meme toi</a>
+                                    alt="Sous le meme toi"><div>Sous le meme toi</div></a>
                                 <figcaption class="phauteur"> Drame, Thriller</figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/02/15/09/25/520233.jpg"
-                                    alt="life">Life</a>
+                                    alt="life"><div>Life</div></a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>                                
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/16/10/21/11/09/092546.jpg"
-                                    alt="cesser">Cessez le feu</a>
+                                    alt="cesser"><div>Cessez le feu</div></a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/15/15/56/131739.jpg"
-                                    alt="chiens">Mes vies de chiens</a>
+                                    alt="chiens"><div>Mes vies de chien</div></a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>
                             </figure>
                         </div>
@@ -144,29 +186,25 @@
                         <div class="lsimage smallsection">
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img3.acsta.net/r_1920_1080/pictures/17/03/03/17/27/305158.jpg"
-                                    alt="fast">
-                                    Fast and Furious 8                               
+                                    alt="fast"><div>Fast and Furious 8</div>
                                 </a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/07/14/19/010723.jpg"
-                                    alt="boul">
-                                    Boul et Bill                                
+                                    alt="boul"><div>Boul et Bill</div>
                                 </a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img4.acsta.net/r_1920_1080/pictures/17/03/01/17/45/314818.jpg"
-                                    alt="ghost">
-                                    Ghost in the Shell
+                                    alt="ghost"><div>Ghost in the Shell</div>
                                 </a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>
                             </figure>
                             <figure>
                                 <a href="#"><img class="imgsize" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/02/10/15/19/165083.jpg"
-                                    alt="">
-                                    Sages Femmes                               
+                                    alt=""><div>Sages Femmes</div>
                                 </a>
                                 <figcaption class="phauteur"> Drame, Thriller </figcaption>
                             </figure>
@@ -244,7 +282,7 @@
                     </div>
                 </section>
             </section>
-            <section class="bottomsection"><!-- Bandes annonces a ne pas manquer -->
+            <section class="bottomsection endmargin"><!-- Bandes annonces a ne pas manquer -->
                 <h3><a href="#">BANDES ANNONCES A NE PAS MANQUER</a></h3>
                 <div class="lsimage">
                     <div class="smallsection lsvertical">
@@ -274,9 +312,9 @@
                     <a class="finsection" href="#">Toutes les bandes-annonces à ne pas manquer</a>
                 </div>
             </section>
-            <section class="bottomsection"><!-- Derniers news cinema -->
+            <section class="bottomsection endmargin"><!-- Derniers news cinema -->
                 <h3><a href="#">DERNIÈRES NEW CINÉMA</a></h3>
-                <div id="" class="smallsection">
+                <div class="smallsection">
                     <div class="lsimage">
                         <figure class="widthtrois  fignews">
                             <a href="#"><img class="imglarge" src="http://www.lepoint.fr/images/2016/06/03/4185098lpw-4186183-article-jpg_3585067_980x426.jpg"
@@ -503,7 +541,7 @@
             <section>
                 <figure>
                         <a href="#">
-                            <img id="bigimgemission" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/03/06/15/19/363909.jpg"
+                            <img class="widthmax" src="http://fr.web.img6.acsta.net/r_1920_1080/pictures/17/03/06/15/19/363909.jpg"
                                 alt="img">
                         </a>
                 </figure>
@@ -642,7 +680,7 @@
         <main class="lsvertical titletop"><!-- SORTIE FILM A L'APPROCHE -->
             <h2><a href="http://www.allocine.fr/film/">CA SORT</a></h2>
             <aside>                <!-- video du film a l'approche -->
-                <iframe width="100%" height="580" src="https://www.youtube.com/embed/b7JhXQe1JHQ" frameborder="0" allowfullscreen></iframe>
+                <iframe class="widthmax" width="800" height="580" src="https://www.youtube.com/embed/b7JhXQe1JHQ" allowfullscreen></iframe>
             </aside>
         </main>
     </main>
