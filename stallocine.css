@@ -147,18 +147,24 @@ figure{
 .smallsection{ /* espace entre h3 et section */
     margin-top: -1.1rem;
 }
+.lswrap{
+    flex-wrap:wrap;
+}
 .widthtrois{
     width:33.333333%
 }
 .widthtroiscinq{
-    width:38.5%
+    width:28.5%
 }
 .widthdeux{
     width:25%;
 }
 .textalign{
-    text-align:auto;
-}  
+    text-align:center;
+} 
+marginauto{
+    margin:auto;
+}
 /*police***********************************************************************/
 h2{
     margin: auto;
@@ -179,7 +185,7 @@ h4{
 }
 h6{
     color: #E6E6E6;
-    font-size:0.7rem;
+    font-size:0.77rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 p{
@@ -259,6 +265,9 @@ a:hover{
 }
 .textleft{
     margin-left:0.2rem;
+}
+.textright{
+    margin-right: 0.2rem;
 }
 #bordertop{
     border-top: 0.1rem solid #F0F0F0;
@@ -499,10 +508,36 @@ footer{
 .borderfootermargin{
     border-left: 1px solid #3B3B3B;
     border-right:1px solid #3B3B3B;
+    padding-bottom:2rem;
 }
 .footerpolice{
     color:#E6E6E6;
 }
 .footermarginleft{
     margin-left:2rem;
+}
+.marginimg{
+    margin-right: 1rem;
+}
+.footerhover:hover{
+    color:white;
+    text-decoration:underline;
+}
+.font{
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.fontother{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.hauteurtext{
+    margin-top:0;
+    margin-bottom: 0;
+    font-size:0.7rem;
+    color:#E6E6E6;
+}
+.hauteurnone{
+    margin-top:0;
 }
