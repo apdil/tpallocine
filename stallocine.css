@@ -1,3 +1,6 @@
+widthdix{
+    width:10%;
+}
 #textheader::placeholder{
     font-size:0.8rem;
     opacity:0.2;
@@ -8,71 +11,47 @@
 }
 #slideshow{
     overflow: hidden;
+    animation-name: mooved;
+    animation-duration: 100s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(6, -32, 0, 1);
 }
-.defillementimg{
-    width:100%;
+@keyframes mooved{
+    0%{
+        left:0;
+    }
+    10%{
+        margin-left:-100%;
+    }
+    20%{
+        margin-left:-200%;
+    }
+    30%{
+        margin-left:-300%;
+    }
+    40%{
+        margin-left:-400%;
+    }
+    50%{
+        margin-left:-500%;
+    }
+    60%{
+        margin-left:-600%;
+    }
+    70%{
+        margin-left:-700%;
+    }
+    80%{
+        margin-left:-800%;
+    }
+    90%{
+        margin-left:-800%;
+    }
+    100%{
+        margin-left:0%;
+    }
 }
-#liste{
-    list-style: none;
-    position: relative; 
-	padding: 0;
-    width: 1000%;
-    transition: left 18s;
-}
-#slideshow:target #liste {
-	left: -100%;
-}
-#slideshow .next, #slideshow .prev {
-	position: absolute;
-	top: 65px;
-	z-index: 20;
-}
-#s1:target #sContent { left: 0px; }
-#s1:target .next, #s1:target .prev { display: none; }
-#s1:target .next1 { display: block; }
-
-/* Vers 2ème étape */
-#s2:target #sContent { left: -100%; } /*ou -100%*/
-#s2:target .next, #s2:target .prev { display: none; }
-#s2:target .next2, #s2:target .prev2 { display: block; }
-
-/* Vers 3ème étape */
-#s3:target #sContent { left: -200%; } /*ou -200%*/
-#s3:target .next, #s3:target .prev { display: none; }
-#s3:target .prev3 { display: block; }
-
-#s4:target #sContent { left: -300%; }
-#s4:target .next, #s1:target .prev { display: none; }
-#s4:target .next1 { display: block; }
-
-/* Vers 2ème étape */
-#s5:target #sContent { left: -400%; } /*ou -100%*/
-#s5:target .next, #s2:target .prev { display: none; }
-#s5:target .next2, #s2:target .prev2 { display: block; }
-
-/* Vers 3ème étape */
-#s6:target #sContent { left: -500%; } /*ou -200%*/
-#s6:target .next, #s3:target .prev { display: none; }
-#s6:target .prev3 { display: block; }
-
-#s7:target #sContent { left: -600%; }
-#s7:target .next, #s1:target .prev { display: none; }
-#s7:target .next1 { display: block; }
-
-/* Vers 2ème étape */
-#s8:target #sContent { left: -700%; } /*ou -100%*/
-#s8:target .next, #s2:target .prev { display: none; }
-#s8:target .next2, #s2:target .prev2 { display: block; }
-
-/* Vers 3ème étape */
-#s9:target #sContent { left: -800%; } /*ou -200%*/
-#s9:target .next, #s3:target .prev { display: none; }
-#s9:target .prev3 { display: block; }
-
-#s10:target #sContent { left: -900%; } /*ou -200%*/
-#s10:target .next, #s3:target .prev { display: none; }
-#s10:target .prev3 { display: block; }
-
 #mainborder{
     background-color: #FFFFFF;
     margin-right:10%;
@@ -99,6 +78,10 @@ html{
 }
 figure{
     margin:0;
+}
+ul{
+    list-style: none;
+    padding-left:0;
 }
 /*Comportement des listes*********************************************************/
 
@@ -279,7 +262,7 @@ a:hover{
     box-shadow: 8px 0px 2px grey;
     padding: 0 0 0 0;
     z-index: 1;
-    display:none;
+    display:fixed;
 }
 #embleme{
     margin-right: 1rem;
@@ -292,6 +275,7 @@ header{
     color: #333333;
     font-size:1.2rem;
     margin: 0;
+    margin-bottom:-1rem;
 }
 header p{
     background-color: #FFFFFF;
@@ -323,7 +307,9 @@ header nav a:hover{
     background-color: white;
     opacity: 0.4;
 }
-
+header nav a:hover header nav a{
+    font-size: 12rem;
+}
 .navsmall{ /*petit menu au centre*/
     font-size: 0.8rem;
     font-weight: 400;
@@ -336,6 +322,7 @@ header nav a:hover{
 #homefixed{
     padding-top: 0.9rem;
     padding-bottom: 1.2rem;
+    margin-right:0;
 }
 #monallocine{
     font-size: 0.8rem;
@@ -348,7 +335,10 @@ header nav a:hover{
 }
 #cache{
     display:none;
+    z-index:1;
 }
+
+
 #menuderoulant:hover #cache{
     display:block;
     position: absolute;
@@ -391,6 +381,13 @@ header nav a:hover{
     margin-right: -0.27rem;
     padding-left:0.8rem;
 }
+.backgroundclr{
+    padding: 0.9rem;
+}
+#headerfixed a{
+    margin-right:0;
+}
+
 /************************************************************************************CINEMA*/
 #search{
     background-color: #F0F0F0;
@@ -491,6 +488,7 @@ header nav a:hover{
 }
 .heightslide{
     height: 26rem;
+    z-index: 20;
 }
 #divertir{
     font-family: montserratSemiBold,Arial,Sans-Serif;
