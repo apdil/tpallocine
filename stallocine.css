@@ -1,3 +1,4 @@
+
 widthdix{
     width:10%;
 }
@@ -12,11 +13,11 @@ widthdix{
 #slideshow{
     overflow: hidden;
     animation-name: mooved;
-    animation-duration: 100s;
+    animation-duration: 10s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(6, -32, 0, 1);
-}
+    animation-timing-function: step-start linear;
+}   
 @keyframes mooved{
     0%{
         left:0;
@@ -46,7 +47,7 @@ widthdix{
         margin-left:-800%;
     }
     90%{
-        margin-left:-800%;
+        margin-left:-900%;
     }
     100%{
         margin-left:0%;
@@ -307,9 +308,6 @@ header nav a:hover{
     background-color: white;
     opacity: 0.4;
 }
-header nav a:hover header nav a{
-    font-size: 12rem;
-}
 .navsmall{ /*petit menu au centre*/
     font-size: 0.8rem;
     font-weight: 400;
@@ -488,7 +486,6 @@ header nav a:hover header nav a{
 }
 .heightslide{
     height: 26rem;
-    z-index: 20;
 }
 #divertir{
     font-family: montserratSemiBold,Arial,Sans-Serif;
