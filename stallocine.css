@@ -14,7 +14,7 @@
     animation-duration: 50s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }   
 @keyframes mooved{
     0%{
@@ -261,7 +261,6 @@ a:hover{
     box-shadow: 8px 0px 2px grey;
     padding: 0 0 0 0;
     z-index: 1;
-    display: none;
 }
 #embleme{
     margin-right: 1rem;
@@ -330,15 +329,25 @@ header nav a:hover{
     margin-right: -0.5rem;
     padding-bottom: 0.6rem;    
 }
-#cache{
+#monallocinefixed{
+    align-self:flex-end;
+}
+.cache{
     display:none;
     z-index:1;
 }
-#cache div{
+.cache div{
     margin-top: 0.8rem;
 }
-
-#menuderoulant:hover #cache{
+#headercacher{
+    margin-top:24.3rem;
+    margin-left: -10rem;
+    box-shadow: 1px 1px 3px grey;
+}
+#bouttonne{
+    padding-right: 1.5rem;
+}
+.menuderoulant:hover .cache{
     display:block;
     position: absolute;
     margin-top: 2rem;
@@ -349,21 +358,21 @@ header nav a:hover{
     border: 1px solid #d9d9d9;
     font-size: 1rem;
 }
-#identifiez{
+.identifiez{
     height: 2.5rem;
     width: 100%;
     background-color: #0098aa;
     border-radius: 2px;
 }
-#identifiez a{
+.identifiez a{
     color: white;
     margin-left: 1.2rem;
 }
-#amis{
+.amis{
     border-top: 1px solid #d9d9d9;
     padding-top:0.5rem;
 }
-#compte{
+.compte{
     font-size: 0.75rem;
     text-align: center;
 }
@@ -372,7 +381,7 @@ header nav a:hover{
     opacity: 0.1;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
-#compte a{
+.compte a{
     color:#005ea8;
     text-decoration: underline;
     
@@ -385,8 +394,11 @@ header nav a:hover{
 #imagllocine{
     margin-bottom:-0.4rem ;
 }
-#headerposition{
+.headerposition{
     justify-content: space-between;
+}
+#marghead{
+    width:14%;
 }
 #commentaire{
     font-weight: 100;
@@ -518,7 +530,7 @@ header nav a:hover{
     width: 100%;
 }
 .heightslide{
-    height: 26rem;
+    height: 25.5rem;
 }
 #divertir{
     font-family: montserratSemiBold,Arial,Sans-Serif;

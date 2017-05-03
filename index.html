@@ -11,26 +11,43 @@
 
 <body>
     <header id="headerfixed" class="lscenter">
-        <nav class="lscentre">
-            <img id="embleme" src="image/allocinelogo.png" alt="logo">
-            <img id="homefixed" class="home" src="image/home.png" alt="home">
-            <a class="backgroundclr" href="http://www.allocine.fr/film/">CINÉMA</a>
-            <a class="backgroundclr" href="http://www.allocine.fr/series/">SÉRIES</a>
-            <a class="backgroundclr" href="http://www.allocine.fr/video/">ÉMISSIONS</a>
-            <a class="backgroundclr" href="http://www.allocine.fr/news/">NEWS</a>
-            <a class="navsmall backgroundclr" href="http://www.allocine.fr/bo/"><img src="image/music.png" alt="bo"> B.O.</a>
-            <a class="navsmall backgroundclr" href="http://www.allocine.fr/programme-tv/">TV</a>
-            <a class="navsmall backgroundclr" href="http://www.allocine.fr/dvd/du-mois/meilleures-notes-spectateurs/">DVD</a>
-            <a class="navsmall backgroundclr" href="http://www.allocine.fr/vod/">VOD</a>
-            <a class="navsmall backgroundclr" href="http://www.allocine.fr/netflix/">NETFLIX</a>
-        </nav>
+        <div class="lsimage headerposition">
+            <nav class="lscentre">
+                <img id="embleme" src="image/allocinelogo.png" alt="logo">
+                <img id="homefixed" class="home" src="image/home.png" alt="home">
+                <a class="backgroundclr" href="http://www.allocine.fr/film/">CINÉMA</a>
+                <a class="backgroundclr" href="http://www.allocine.fr/series/">SÉRIES</a>
+                <a class="backgroundclr" href="http://www.allocine.fr/video/">ÉMISSIONS</a>
+                <a class="backgroundclr" href="http://www.allocine.fr/news/">NEWS</a>
+                <a class="navsmall backgroundclr" href="http://www.allocine.fr/bo/"><img src="image/music.png" alt="bo"> B.O.</a>
+                <a class="navsmall backgroundclr" href="http://www.allocine.fr/programme-tv/">TV</a>
+                <a class="navsmall backgroundclr" href="http://www.allocine.fr/dvd/du-mois/meilleures-notes-spectateurs/">DVD</a>
+                <a class="navsmall backgroundclr" href="http://www.allocine.fr/vod/">VOD</a>
+                <a class="navsmall backgroundclr" href="http://www.allocine.fr/netflix/">NETFLIX</a>
+            </nav>
+            
+            <div id="marghead" class="lsimage lscenter menuderoulant">
+                <a id="monallocinefixed" href="#"><img src="image/espace.png" alt="espace"><img src="image/bas.png" alt="bas"></a>
+                <div id="headercacher" class="lsvertical cache">
+                    <div class="liensweb identifiez"><div><a id="bouttonne" href="">IDENTIFIEZ-VOUS</a></div></div>
+                    <div class="compte"><a href="#">Créer votre compte</a></div>
+                    <div class="menuder amis"><a href="#">Mes amis</a></div>
+                    <div class="menuder"><a href="">Mes cinéma</a></div>
+                    <div class="menuder"><a href="">Speednoter</a></div>
+                    <div class="menuder"><a href="">Ma Collection</a></div>
+                    <div class="menuder"><a href="">Mon Compte</a></div>
+                    <div class="menuder"><a href="">Jeux</a></div>
+                    <div class="menuder"><a href="">Forum</a></div>
+                </div>
+            </div>
+        </div>
         <div>
             <p>Découvrez notre recherche de séances cinéma, les news et dossiers cinéma et séries TV, les émissions AlloCiné,
                     les dernières bandes-annonces et plus encore...</p>
         </div>
     </header>
     <main id="mainborder">
-        <header class="">
+        <header>
             <!-- CREATION BANDEROLE -->
             <div class="lsimage">
                 <!-- block |logo + barre de recherche| -->
@@ -45,7 +62,7 @@
                     <p id="commentaire">Ex. : Sully, Silence, Games of Thrones, Vampire Diaries, Scandal </p>
                 </form>
             </div>
-            <div id="headerposition" class="lsimage">
+            <div class="lsimage headerposition">
                 <!-- block |menu + espace perso|-->
                 <nav class="lsimage"><!-- menu principale -->
                     <img class="home" src="image/home.png" alt="home">
@@ -59,12 +76,12 @@
                     <a class="navsmall" href="http://www.allocine.fr/vod/">VOD</a>
                     <a class="navsmall" href="http://www.allocine.fr/netflix/">NETFLIX</a>
                 </nav>
-                <div id="menuderoulant" class="lsvertical">
+                <div class="lsvertical menuderoulant">
                     <a href="#" id="monallocine"><img id="imagllocine" src="image/espace.png" alt="espace"> MON ALLOCINÉ <img src="image/bas.png" alt="bas"></a>
-                    <div id="cache" class="lsvertical">
-                        <div id="identifiez" class="liensweb"><div><a href="">IDENTIFIEZ-VOUS</a></div></div>
-                        <div id="compte"><a href="#">Créer votre compte</a></div>
-                        <div class="menuder" id="amis"><a href="#">Mes amis</a></div>
+                    <div class="lsvertical cache">
+                        <div class="liensweb identifiez"><div><a href="">IDENTIFIEZ-VOUS</a></div></div>
+                        <div class="compte"><a href="#">Créer votre compte</a></div>
+                        <div class="menuder amis"><a href="#">Mes amis</a></div>
                         <div class="menuder"><a href="">Mes cinéma</a></div>
                         <div class="menuder"><a href="">Speednoter</a></div>
                         <div class="menuder"><a href="">Ma Collection</a></div>
@@ -462,7 +479,7 @@
                 <section class="bottomsection"><!-- L'actu series -->
                     <h3><a href="#">L'ACTU SERIES</a></h3>
                     <div class="lsvertical smallsection">
-                        <a class="tabserie" href="http://www.allocine.fr/film/fichefilm_gen_cfilm=189525.html"><img class="imglarge" src="http://fr.web.img3.acsta.net/newsv7/17/04/19/11/47/451137.jpg" alt="">                            Walking dead ohe ohe blalalalallalalal allalala alla lalala lala lal</a>
+                        <a class="tabserie" href="http://www.allocine.fr/film/fichefilm_gen_cfilm=189525.html"><img class="imglarge" src="http://fr.web.img3.acsta.net/newsv7/17/04/19/11/47/451137.jpg" alt="">Saison US 2016/2017 : toutes les séries renouvelées et annulées</a>
                         <div class="tabserie">
                             <p class="legendimgjaune legendimgsize">NEWS - AU PROGRAMME</p>
                             <p class="legendimgsize">Date</p>
