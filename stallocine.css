@@ -209,6 +209,7 @@ a{
 a:hover{
     color:#1ca2eb;
 }
+
 /************************/
 .longueur{
     margin-bottom:4rem;
@@ -490,6 +491,19 @@ header nav a:hover{
 #bdannonces{ /* grand image bande annonces */
     width: 42rem;
     height:23rem;
+}
+#hidden{
+    display: none;
+}
+#hidden a{
+    color:white;
+    font-size: 1rem;
+}
+#hiddenca:hover #hidden{
+    display:block;
+}
+.lienimg{
+    margin-top: -5rem;
 }
 
 /*SERIE*/
