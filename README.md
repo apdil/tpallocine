@@ -1,4 +1,4 @@
-# Premier projet Simlpon
+# Premier projet Simplon
 
 ## Techno: HTML/CSS
 
